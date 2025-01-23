@@ -4,8 +4,8 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             sum+=nums[i];
         }
-        int expSum = (nums.length*(nums.length+1))/2;
+        // int expSum = (nums.length*(nums.length+1))/2;
         
-        return expSum-sum;
+        return ((nums.length*(nums.length+1))/2)-sum;
     }
 }
