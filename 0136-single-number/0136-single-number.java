@@ -1,9 +1,5 @@
 class Solution {
     public int singleNumber(int[] nums) {
-        int large = nums[0];
-        for(int i=1;i<nums.length;i++){
-            if(nums[i]>large) large = nums[i];
-        }
 
         Map<Integer, Integer> count = new HashMap<Integer, Integer>();
         for(int i=0;i<nums.length;i++){
