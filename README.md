@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/dhanush224/DSA/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/dhanush224/DSA/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/dhanush224/DSA/tree/master/0283-move-zeroes) |
+| [0540-single-element-in-a-sorted-array](https://github.com/dhanush224/DSA/tree/master/0540-single-element-in-a-sorted-array) |
 | [0792-binary-search](https://github.com/dhanush224/DSA/tree/master/0792-binary-search) |
 ## Hash Table
 |  |
@@ -43,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0035-search-insert-position](https://github.com/dhanush224/DSA/tree/master/0035-search-insert-position) |
 | [0268-missing-number](https://github.com/dhanush224/DSA/tree/master/0268-missing-number) |
+| [0540-single-element-in-a-sorted-array](https://github.com/dhanush224/DSA/tree/master/0540-single-element-in-a-sorted-array) |
 | [0792-binary-search](https://github.com/dhanush224/DSA/tree/master/0792-binary-search) |
 ## Bit Manipulation
 |  |
