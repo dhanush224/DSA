@@ -8,7 +8,6 @@ class Solution {
             int mid = low + (high-low)/2;
             // System.out.println("Mid: "+mid);
             if(nums[mid]==target){
-                if(first==mid) break;
                 first=mid;
                 high = mid-1;
                 // System.out.println("First::::"+first);
@@ -27,7 +26,6 @@ class Solution {
             if(first ==-1)break;
             int mid = low + (high-low)/2;
             if(nums[mid]==target){
-                if(last==mid) break;
                 last=mid;
                 low=mid+1;
             }else if(nums[mid]>target){
