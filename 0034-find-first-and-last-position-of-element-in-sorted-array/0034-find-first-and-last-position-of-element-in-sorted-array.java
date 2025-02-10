@@ -37,14 +37,7 @@ class Solution {
             }
         }
 
-        if(first!=-1 && last==-1){
-            if(nums[nums.length-1]==target) last=nums.length-1;
-            else last =first;
-        }
         int[] arr1 = {first, last};
-
-
-
         return arr1;
  
     }
