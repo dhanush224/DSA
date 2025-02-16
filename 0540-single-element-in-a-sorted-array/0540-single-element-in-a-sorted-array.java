@@ -3,9 +3,7 @@ class Solution {
 
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 
-        int target = -1;
         int low = 1, high = nums.length-1;
-        if(nums.length==1) return nums[0];
 
         if(nums.length==1) return nums[0];
         else{
