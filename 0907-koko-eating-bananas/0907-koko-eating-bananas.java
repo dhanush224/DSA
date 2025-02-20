@@ -26,20 +26,16 @@ class Solution {
             }
             // System.out.println("Sum: "+sum);
 
-            if(sum==h){
+            if(sum<=h){
                 // System.out.println("Sum: "+sum+ ", mid: "+mid);
                 ans=mid;
                 high=mid-1;
             }else if(sum>h){
                 low=mid+1;
-            }else{
-                if(smallest>mid) smallest=mid;
-                high=mid-1;
             }
 
         }
 
-        if(ans==-1) return smallest;
         return ans;
 
     }
