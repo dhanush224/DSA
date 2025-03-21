@@ -15,7 +15,7 @@ class Solution {
             int mid=low+(high-low)/2;
             int capacity=mid;
             int daysCount=1;
-            System.out.println("Capacity: "+ capacity);
+
             for(int i=0;i<weights.length;i++){
                 if(capacity>=weights[i]){
                     capacity-=weights[i];
@@ -27,7 +27,6 @@ class Solution {
 
                 
             }
-            System.out.println("Days Count: "+ daysCount);
             if(daysCount<=days){
                 high=mid-1;
             }else{
