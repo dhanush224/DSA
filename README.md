@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1646-kth-missing-positive-number](https://github.com/dhanush224/DSA/tree/master/1646-kth-missing-positive-number) |
 | [2442-number-of-arithmetic-triplets](https://github.com/dhanush224/DSA/tree/master/2442-number-of-arithmetic-triplets) |
 | [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/dhanush224/DSA/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
+| [3176-minimum-sum-of-mountain-triplets-i](https://github.com/dhanush224/DSA/tree/master/3176-minimum-sum-of-mountain-triplets-i) |
 ## Hash Table
 |  |
 | ------- |
