@@ -2,25 +2,21 @@ class Solution {
     public long maximumTripletValue(int[] nums) {
 
         long maxValue=0;
-        int preMax=nums[0];
-        HashMap<Integer, Integer> map = new HashMap<>();
-        for(int j=1;j<nums.length-1;j++){
-            preMax = Math.max(nums[j-1],preMax);
-            map.put(j, preMax);
-        }
+        int prefixMax = nums[0];
+        long maxDiff = 0;
 
-         
-        int suffixMax = nums[nums.length-1]; 
-        for(int j=nums.length-2;j>0;j--){
-            suffixMax = Math.max(nums[j+1],suffixMax);
-            // System.out.println(suffixMax+" j:"+j);
-            long val = map.get(j)-nums[j];
-            val *= suffixMax;
+        for(int k=1;k<nums.length;k++){
+            if(nums[k-1]>prefixMax){
+                prefixMax = nums[k-1];
+            }
+            // System.out.println("PrefixMax: "+prefixMax);
+            if(prefixMax-nums[k-1]> maxDiff)maxDiff = prefixMax-nums[k-1];
+            // System.out.println("MaxDiff:"+maxDiff);
+            // System.out.println("Index: "+k+", Prefix:"+ prefixMax+ ", Suffix: "+ suffixMin);
+            long val = maxDiff*nums[k];
+            // System.out.println("Value:"+val);
 
             maxValue = Math.max(val, maxValue);
-
-
-
         }
 
         return maxValue;         
