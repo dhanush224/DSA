@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/dhanush224/DSA/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/dhanush224/DSA/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/dhanush224/DSA/tree/master/1646-kth-missing-positive-number) |
+| [1878-check-if-array-is-sorted-and-rotated](https://github.com/dhanush224/DSA/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [2442-number-of-arithmetic-triplets](https://github.com/dhanush224/DSA/tree/master/2442-number-of-arithmetic-triplets) |
 | [3152-maximum-value-of-an-ordered-triplet-ii](https://github.com/dhanush224/DSA/tree/master/3152-maximum-value-of-an-ordered-triplet-ii) |
 | [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/dhanush224/DSA/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
