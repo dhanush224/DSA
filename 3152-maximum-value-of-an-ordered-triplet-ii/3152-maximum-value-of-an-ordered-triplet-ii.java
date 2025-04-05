@@ -9,12 +9,8 @@ class Solution {
             if(nums[k-1]>prefixMax){
                 prefixMax = nums[k-1];
             }
-            // System.out.println("PrefixMax: "+prefixMax);
             if(prefixMax-nums[k-1]> maxDiff)maxDiff = prefixMax-nums[k-1];
-            // System.out.println("MaxDiff:"+maxDiff);
-            // System.out.println("Index: "+k+", Prefix:"+ prefixMax+ ", Suffix: "+ suffixMin);
             long val = maxDiff*nums[k];
-            // System.out.println("Value:"+val);
 
             maxValue = Math.max(val, maxValue);
         }
