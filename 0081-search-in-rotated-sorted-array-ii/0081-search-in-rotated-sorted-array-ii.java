@@ -2,11 +2,6 @@ class Solution {
     public boolean search(int[] nums, int target) {
 
         int low =0, high = nums.length-1;
-        int start =0;
-
-        for(int i=0;i<nums.length-1;i++){
-            if(nums[i]>nums[i+1]) start = i+1;
-        }
 
         while(low<=high){
             int mid = low + (high-low)/2;
