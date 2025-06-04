@@ -5,21 +5,16 @@ class Solution {
         }
 
         int maxLength = 1;
-        Map<Integer,Integer> set = new HashMap<>();
+        Set<Integer> set = new HashSet<>();
         int j=0;
         for(int i=0;i<s.length();i++){
             Integer val = (int)s.charAt(i);
-            if(!set.containsValue(val)){
-                set.put(i,val);
-                
-            }else{
-                while(set.containsValue(val)){
-                    set.remove(j);
+            while(set.contains(val)){
+                Integer val2 = (int)s.charAt(j);
+                set.remove(val2);
                     j++;
                 }
-                set.put(i, val);
-                
-            }
+            set.add(val);
 
             if(set.size()>maxLength) maxLength = set.size();
         }
