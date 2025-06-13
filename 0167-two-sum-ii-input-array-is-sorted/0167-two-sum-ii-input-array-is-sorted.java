@@ -9,6 +9,7 @@ class Solution {
                 if((target-numbers[i])==numbers[j]){
                     ans[0] = i+1;
                     ans[1] = j+1;
+                    return ans;
                 }else if(numbers[j]>target-numbers[i]){
                     break;
                 }
