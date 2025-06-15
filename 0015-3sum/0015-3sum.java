@@ -26,22 +26,14 @@ class Solution {
                         k--;
                         ans.add(list);
 
-
+                        while(j<k && nums[j]==nums[j-1]) j++;
+                        while(j<k && nums[k]==nums[k+1]) k--;
                     }else if(sum<0){
                         j++;
                     }
                     else{
                         k--;
                     }
-
-                    while(j<k && j-1!=i && nums[j]==nums[j-1]){
-                        j++;
-                        // System.out.println("j:"+j+", k:"+k);
-                    } 
-                    while(j<k && k!=nums.length-1 && nums[k]==nums[k+1]){
-                        k--;
-                        // System.out.println("j:"+j+", k:"+k);
-                    } 
 
                 }
             
