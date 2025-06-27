@@ -1,24 +1,34 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
-        if(s.length()!=t.length()){
-            return false;
-        }
-        int[] sum1 = new int[s.length()];
-        int[] sum2 = new int[t.length()];
+
+        if(s.length()!=t.length()) return false;
+
+        Map<Integer, Integer> map1 = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> map2 = new HashMap<Integer, Integer>();
 
         for(int i=0;i<s.length();i++){
-           sum1[i]=s.charAt(i);
+            Integer key = (int)s.charAt(i);
+            if(map1.containsKey(key)) map1.put(key, map1.get(key)+1);
+            else map1.put(key, 1);
         }
+
         for(int i=0;i<t.length();i++){
-            sum2[i]=t.charAt(i);
+            Integer key = (int)t.charAt(i);
+            if(map2.containsKey(key)) map2.put(key, map2.get(key)+1);
+            else map2.put(key, 1);
         }
-        Arrays.sort(sum1);
-        Arrays.sort(sum2);
-        for(int i=0;i<sum1.length;i++){
-            if(!(sum1[i]==sum2[i])){
-                return false;
-            }
+
+        System.out.println(map1);
+        System.out.println(map2);
+
+        for(int i=0;i<s.length();i++){
+            Integer key = (int)s.charAt(i);
+            // System.out.println(map1.get(key)+", "+map2.get(key));
+            if(!map1.get(key).equals(map2.get(key))) return false;
         }
+
         return true;
+
+       
     }
 }
