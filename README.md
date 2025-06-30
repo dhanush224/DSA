@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/dhanush224/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/dhanush224/DSA/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/dhanush224/DSA/tree/master/0169-majority-element) |
+| [0205-isomorphic-strings](https://github.com/dhanush224/DSA/tree/master/0205-isomorphic-strings) |
 | [0217-contains-duplicate](https://github.com/dhanush224/DSA/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/dhanush224/DSA/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/dhanush224/DSA/tree/master/0268-missing-number) |
@@ -84,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/dhanush224/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/dhanush224/DSA/tree/master/0005-longest-palindromic-substring) |
 | [0125-valid-palindrome](https://github.com/dhanush224/DSA/tree/master/0125-valid-palindrome) |
+| [0205-isomorphic-strings](https://github.com/dhanush224/DSA/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/dhanush224/DSA/tree/master/0242-valid-anagram) |
 | [0812-rotate-string](https://github.com/dhanush224/DSA/tree/master/0812-rotate-string) |
 ## Math
