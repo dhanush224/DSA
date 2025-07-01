@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/dhanush224/DSA/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/dhanush224/DSA/tree/master/0004-median-of-two-sorted-arrays) |
+| [0014-longest-common-prefix](https://github.com/dhanush224/DSA/tree/master/0014-longest-common-prefix) |
 | [0015-3sum](https://github.com/dhanush224/DSA/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/dhanush224/DSA/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0031-next-permutation](https://github.com/dhanush224/DSA/tree/master/0031-next-permutation) |
@@ -84,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/dhanush224/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/dhanush224/DSA/tree/master/0005-longest-palindromic-substring) |
+| [0014-longest-common-prefix](https://github.com/dhanush224/DSA/tree/master/0014-longest-common-prefix) |
 | [0125-valid-palindrome](https://github.com/dhanush224/DSA/tree/master/0125-valid-palindrome) |
 | [0205-isomorphic-strings](https://github.com/dhanush224/DSA/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/dhanush224/DSA/tree/master/0242-valid-anagram) |
@@ -169,4 +171,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0812-rotate-string](https://github.com/dhanush224/DSA/tree/master/0812-rotate-string) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/dhanush224/DSA/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
