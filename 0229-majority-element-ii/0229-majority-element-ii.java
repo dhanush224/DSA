@@ -13,8 +13,8 @@ class Solution {
 
         for(Integer key: map.keySet()){
 
-            float k = map.get(key);
-            float oneThird = nums.length/(float)3;
+            
+            float oneThird = nums.length/3;
             
             if((float)map.get(key)>oneThird){
                 list.add(key);
