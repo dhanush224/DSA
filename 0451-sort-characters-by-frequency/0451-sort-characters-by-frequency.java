@@ -10,15 +10,16 @@ class Solution {
 
         Map<Integer,ArrayList<Character>> reversecount = new HashMap<>();
         for(Character c: count.keySet()){
+            Integer i = count.get(c);
             if(reversecount.get(count.get(c))!=null){
-                Integer i = count.get(c);
+                
                 ArrayList<Character> list = reversecount.get(i);
                 list.add(c);
                 reversecount.put( i , list);
             }else{
                 ArrayList<Character> list = new ArrayList<>();
                 list.add(c);
-                reversecount.put(count.get(c),list);
+                reversecount.put(i,list);
             } 
         }
 
