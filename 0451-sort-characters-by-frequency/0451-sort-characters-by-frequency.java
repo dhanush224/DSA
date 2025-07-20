@@ -12,15 +12,15 @@ class Solution {
 
         list.sort((a,b) -> count.get(b)-count.get(a));
 
-        String t="";
+        StringBuilder t=new StringBuilder();
         for(Character ch: list){
             for(int j=0;j<count.get(ch);j++){
-                t+=ch;
+                t.append(ch);
             }
         }
 
 
-        return t;
+        return t.toString();
 
                 
     }
