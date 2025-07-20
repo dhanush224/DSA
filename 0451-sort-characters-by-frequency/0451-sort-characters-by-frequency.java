@@ -8,31 +8,17 @@ class Solution {
             }else count.put(s.charAt(i),1);
         }
 
-        Map<Integer,ArrayList<Character>> reversecount = new HashMap<>();
-        for(Character c: count.keySet()){
-            Integer i = count.get(c);
-            if(reversecount.get(count.get(c))!=null){
-                
-                ArrayList<Character> list = reversecount.get(i);
-                list.add(c);
-                reversecount.put( i , list);
-            }else{
-                ArrayList<Character> list = new ArrayList<>();
-                list.add(c);
-                reversecount.put(i,list);
-            } 
-        }
+        List<Character> list = new ArrayList<>(count.keySet());
+
+        list.sort((a,b) -> count.get(b)-count.get(a));
 
         String t="";
-        for(int i=s.length();i>0;i--){
-            if(reversecount.containsKey(i)){
-                for(int j=0;j<reversecount.get(i).size();j++){
-                    for(int k=0;k<i;k++){
-                        t+=reversecount.get(i).get(j);
-                    }                    
-                }
+        for(Character ch: list){
+            for(int j=0;j<count.get(ch);j++){
+                t+=ch;
             }
         }
+
 
         return t;
 
