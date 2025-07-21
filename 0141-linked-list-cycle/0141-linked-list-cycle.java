@@ -16,7 +16,7 @@ public class Solution {
         ListNode temp=head;
         ListNode upcoming=head;
 
-        while(temp!=null && upcoming!=null && upcoming.next!=null){
+        while(upcoming!=null && upcoming.next!=null){
             temp=temp.next;
             upcoming=upcoming.next.next;
             if(temp==upcoming) return true;
