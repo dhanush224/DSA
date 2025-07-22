@@ -17,14 +17,8 @@ class Solution {
         if(temp.next!=null) {
             ListNode newHead = reverseList(temp.next);
             ListNode front = temp.next;
-            if(temp.next==newHead){
-                temp.next=null;
-                newHead.next=temp;
-            } 
-            else{
-                front.next=temp;
-                temp.next=null;
-            } 
+            front.next=temp;
+            temp.next=null;
             return newHead;
         }
 
