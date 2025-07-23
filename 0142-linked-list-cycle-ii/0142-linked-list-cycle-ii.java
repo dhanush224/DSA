@@ -19,17 +19,14 @@ public class Solution {
         while(fast!=null && fast.next!=null){
             slow=slow.next;
             fast=fast.next.next;
-            if(fast==slow) break;
-        }
-
-        // System.out.println("Slow: "+slow.val+", Fast: "+fast.val);
-
-        fast=head;
-
-        while(slow!=null){
-            if(slow==fast) return slow;
-            slow=slow.next;
-            fast=fast.next;
+            if(fast==slow){
+                slow=head;
+                while(slow!=null){
+                    if(slow==fast) return slow;
+                    slow=slow.next;
+                    fast=fast.next;
+                }
+            } 
         }
 
         return null;
