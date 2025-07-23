@@ -14,13 +14,22 @@ public class Solution {
 
         if(head==null || head.next==null) return null;
 
-        HashSet<ListNode> hs = new HashSet<>();
+        ListNode slow = head;
+        ListNode fast = head;
+        while(fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+            if(fast==slow) break;
+        }
 
-        ListNode temp = head;
-        while(temp!=null){
-            if(hs.contains(temp)) return temp;
-            hs.add(temp);
-            temp=temp.next;
+        // System.out.println("Slow: "+slow.val+", Fast: "+fast.val);
+
+        fast=head;
+
+        while(slow!=null){
+            if(slow==fast) return slow;
+            slow=slow.next;
+            fast=fast.next;
         }
 
         return null;
