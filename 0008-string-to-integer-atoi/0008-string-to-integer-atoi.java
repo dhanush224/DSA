@@ -18,21 +18,20 @@ class Solution {
             sign=-1;
             i++;
         }
-        System.out.println("i: "+i+ ", sign:"+sign);
+        // System.out.println("i: "+i+ ", sign:"+sign);
 
         while(i<s.length() && Character.isDigit(s.charAt(i))){
 
             int digit = s.charAt(i) - '0';
             ans = ans*10 + digit;
-            System.out.println(ans+", "+digit);
-
-
+            // System.out.println(ans+", "+digit);
+            
             if(sign*ans>Integer.MAX_VALUE) return Integer.MAX_VALUE;
             else if(sign*ans<Integer.MIN_VALUE) return Integer.MIN_VALUE;
 
             i++;
         }
-        System.out.println("sign:"+sign);
+        // System.out.println("sign:"+sign);
 
 
         return (int)(sign*ans);
