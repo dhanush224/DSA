@@ -6,9 +6,12 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             map.put(nums[i], map.getOrDefault(nums[i],0)+1);
             if(map.size()==3){
+                Map<Integer,Integer> newMap = new HashMap<>();
+
                 for(Integer key: map.keySet()){
-                    map.put(key, map.get(key)-1);
+                    if(map.get(key)>1) newMap.put(key,map.get(key)-1);
                 }
+                map=newMap;
 
             }
         }
