@@ -15,7 +15,7 @@ class Solution {
 
             }
         }
-        System.out.println("Map: "+map);
+        // System.out.println("Map: "+map);
         List<Integer> list = new ArrayList<>();
 
         for(Integer key: map.keySet()){
