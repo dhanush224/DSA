@@ -12,10 +12,8 @@ class Solution {
                     if(map.get(key)>1) newMap.put(key,map.get(key)-1);
                 }
                 map=newMap;
-
             }
         }
-        // System.out.println("Map: "+map);
         List<Integer> list = new ArrayList<>();
 
         for(Integer key: map.keySet()){
