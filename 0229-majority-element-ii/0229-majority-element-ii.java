@@ -4,22 +4,25 @@ class Solution {
         Map<Integer,Integer> map = new HashMap<>();
 
         for(int i=0;i<nums.length;i++){
-            if(map.get(nums[i])!=null){
-                Integer val = map.get(nums[i]);
-                map.put(nums[i], val+1);
-            }else map.put(nums[i],1);
+            map.put(nums[i], map.getOrDefault(nums[i],0)+1);
+            if(map.size()==3){
+                for(Integer key: map.keySet()){
+                    map.put(key, map.get(key)-1);
+                }
+
+            }
         }
+        System.out.println("Map: "+map);
         List<Integer> list = new ArrayList<>();
 
         for(Integer key: map.keySet()){
-
-            
-            int oneThird = nums.length/3;
-            
-            if(map.get(key)>oneThird){
-                list.add(key);
+            int count=0;
+            for(int i=0;i<nums.length;i++){
+                if(nums[i]==key)count++;
             }
-        }
+            if(count>(nums.length/3))
+                list.add(key);
+        }        
 
         return list;
     }
