@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/dhanush224/DSA/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/dhanush224/DSA/tree/master/0268-missing-number) |
 | [0451-sort-characters-by-frequency](https://github.com/dhanush224/DSA/tree/master/0451-sort-characters-by-frequency) |
+| [1890-sum-of-beauty-of-all-substrings](https://github.com/dhanush224/DSA/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [2442-number-of-arithmetic-triplets](https://github.com/dhanush224/DSA/tree/master/2442-number-of-arithmetic-triplets) |
 ## Sorting
 |  |
@@ -107,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0451-sort-characters-by-frequency](https://github.com/dhanush224/DSA/tree/master/0451-sort-characters-by-frequency) |
 | [0812-rotate-string](https://github.com/dhanush224/DSA/tree/master/0812-rotate-string) |
 | [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/dhanush224/DSA/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
+| [1890-sum-of-beauty-of-all-substrings](https://github.com/dhanush224/DSA/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [2032-largest-odd-number-in-string](https://github.com/dhanush224/DSA/tree/master/2032-largest-odd-number-in-string) |
 ## Math
 |  |
@@ -179,6 +181,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/dhanush224/DSA/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/dhanush224/DSA/tree/master/0229-majority-element-ii) |
 | [0451-sort-characters-by-frequency](https://github.com/dhanush224/DSA/tree/master/0451-sort-characters-by-frequency) |
+| [1890-sum-of-beauty-of-all-substrings](https://github.com/dhanush224/DSA/tree/master/1890-sum-of-beauty-of-all-substrings) |
 ## Matrix
 |  |
 | ------- |
