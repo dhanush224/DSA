@@ -10,7 +10,7 @@ class Solution {
 
         for(int i=words.length-1;i>=0;i--){
             // System.out.println("i: "+i);
-            if(words[i].length()==0 || words[i].charAt(0)==' ') continue;
+            if(words[i].length()==0 ) continue;
             else{
                 sb.append(words[i]);
                 sb.append(" ");
