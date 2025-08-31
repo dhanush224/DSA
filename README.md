@@ -213,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/dhanush224/DSA/tree/master/0144-binary-tree-preorder-traversal) |
 | [0234-palindrome-linked-list](https://github.com/dhanush224/DSA/tree/master/0234-palindrome-linked-list) |
 | [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/dhanush224/DSA/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
 ## Heap (Priority Queue)
@@ -236,4 +237,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0206-reverse-linked-list](https://github.com/dhanush224/DSA/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/dhanush224/DSA/tree/master/0234-palindrome-linked-list) |
+## Tree
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/dhanush224/DSA/tree/master/0144-binary-tree-preorder-traversal) |
+## Depth-First Search
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/dhanush224/DSA/tree/master/0144-binary-tree-preorder-traversal) |
+## Binary Tree
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/dhanush224/DSA/tree/master/0144-binary-tree-preorder-traversal) |
 <!---LeetCode Topics End-->
