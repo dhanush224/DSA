@@ -16,34 +16,29 @@ class Solution {
         }
 
         ListNode temp = head;
-        int count=0;
+        ListNode fast = head;
+        ListNode slow = head;
 
-        while(temp!=null){
-            count++;
-            temp=temp.next;
+        int length=n;
+
+        while(length!=0){
+            fast=fast.next;
+            length--;
+        }
+        length=n;
+        
+
+        if(fast==null)return head.next;
+
+        while(fast.next!=null){
+            slow=slow.next;
+            fast=fast.next;
         }
 
-        int nth = count-n;
-        count = 0;
-
-        temp=head;
-
-        if(nth==0){
-            return head.next;
-        }
-
-        while(temp!=null){
-            count++;
-            // System.out.println(nth+";"+count);
-            if(count==nth){
-                // System.out.println(temp.val);
-                temp.next=temp.next.next;
-                break;
-            }
-            temp=temp.next;
-        }
+        slow.next=slow.next.next;
 
         return head;
+
         
     }
 }
