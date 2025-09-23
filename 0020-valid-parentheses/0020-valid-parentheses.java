@@ -9,12 +9,9 @@ class Solution {
 
         for(int i=0;i<s.length();i++){
             if(map.containsKey(s.charAt(i))){
-                System.out.println("inside if");
                 st.push(s.charAt(i));
-                System.out.println("Top: "+st.peek());
             }else{
                 try{
-                    System.out.println("Top: "+map.get(st.peek())+"; character: "+s.charAt(i));
                     if(!map.get(st.peek()).equals(s.charAt(i))) return false;
                     st.pop();
                 }catch(Exception e){
