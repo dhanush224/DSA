@@ -5,12 +5,12 @@ class Solution {
 
         for(int i=0;i<s.length();i++){
             Character c = s.charAt(i);
-            if(c=='(' || c=='{' || c=='[') st.push(c);
+            if(c=='(') st.push(')');
+            else if(c=='{') st.push('}');
+            else if(c=='[') st.push(']');
             else{
                 if(st.empty()) return false;
-                if((c==')' && st.peek()=='(') || (c==']' && st.peek()=='[') || (c=='}' && st.peek()=='{')){
-                    st.pop();
-                }else{
+                if(st.pop()!=c){
                     return false;
                 }
             }
