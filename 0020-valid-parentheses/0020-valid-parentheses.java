@@ -4,10 +4,11 @@ class Solution {
         Stack<Character> st = new Stack<Character>();
 
         for(int i=0;i<s.length();i++){
-            if(s.charAt(i)=='(' || s.charAt(i)=='{' || s.charAt(i)=='[') st.push(s.charAt(i));
+            Character c = s.charAt(i);
+            if(c=='(' || c=='{' || c=='[') st.push(c);
             else{
                 if(st.empty()) return false;
-                if((s.charAt(i)==')' && st.peek()=='(') || (s.charAt(i)==']' && st.peek()=='[') || (s.charAt(i)=='}' && st.peek()=='{')){
+                if((c==')' && st.peek()=='(') || (c==']' && st.peek()=='[') || (c=='}' && st.peek()=='{')){
                     st.pop();
                 }else{
                     return false;
