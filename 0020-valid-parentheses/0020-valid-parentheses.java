@@ -9,8 +9,7 @@ class Solution {
             else if(c=='{') st.push('}');
             else if(c=='[') st.push(']');
             else{
-                if(st.empty()) return false;
-                if(st.pop()!=c){
+                if(st.empty() || st.pop()!=c){
                     return false;
                 }
             }
