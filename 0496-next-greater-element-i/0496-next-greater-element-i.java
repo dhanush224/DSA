@@ -5,7 +5,8 @@ class Solution {
         Map<Integer, Integer> map = new HashMap<>();
         Stack<Integer> s = new Stack<>();
 
-        for(int i=nums2.length-1;i>=0;i--){
+        int n=nums2.length;
+        for(int i=n-1;i>=0;i--){
 
             while(!s.empty() && s.peek()<nums2[i]){
                 System.out.println("Top: "+s.peek()+ "; nums2[i]:"+nums2[i]);
