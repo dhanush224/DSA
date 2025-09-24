@@ -9,16 +9,12 @@ class Solution {
         for(int i=n-1;i>=0;i--){
 
             while(!s.empty() && s.peek()<nums2[i]){
-                System.out.println("Top: "+s.peek()+ "; nums2[i]:"+nums2[i]);
                 s.pop();
             }
-            if(s.empty()){
-                map.put(nums2[i],-1);
-            } 
+            if(s.empty()) map.put(nums2[i],-1);
             else map.put(nums2[i],s.peek());
 
             s.push(nums2[i]);
-            
         }
 
         for(int i=0;i<ret.length;i++){
