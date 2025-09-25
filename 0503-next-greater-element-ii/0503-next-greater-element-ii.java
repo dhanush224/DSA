@@ -5,22 +5,15 @@ class Solution {
         Stack<Integer> s = new Stack<>();
 
         int n=nums.length;
-        for(int i=n-1;i>=0;i--){
-            while(!s.empty() && s.peek()<=nums[i]) s.pop();
+        for(int i=(2*n-1);i>=0;i--){
+            while(!s.empty() && s.peek()<=nums[i%n]) s.pop();
 
-            if(s.empty()) ret[i]=-1;
-            else ret[i]=s.peek();
+            if(i<n){
+                if(s.empty()) ret[i]=-1;
+                else ret[i]=s.peek();
+            }            
 
-            s.push(nums[i]);
-        }
-
-        for(int i=n-1;i>=0;i--){
-            while(!s.empty() && s.peek()<=nums[i]) s.pop();
-
-            if(s.empty()) ret[i]=-1;
-            else ret[i]=s.peek();
-
-            s.push(nums[i]);
+            s.push(nums[i%n]);
         }
 
         return ret;
