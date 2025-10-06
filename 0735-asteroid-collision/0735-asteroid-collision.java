@@ -9,9 +9,9 @@ class Solution {
             int eqto=-1;
             while(!st.empty() && st.peek()>0 && curr<0){
                 eqto=-1;
-                if(Math.abs(curr)>Math.abs(st.peek())){
+                if((-1*curr)>st.peek()){
                     st.pop();
-                }else if(Math.abs(curr)==Math.abs(st.peek())){
+                }else if((-1*curr)==st.peek()){
                     st.pop();
                     eqto=1;
                     break;                 
