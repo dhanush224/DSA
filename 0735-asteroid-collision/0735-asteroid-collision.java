@@ -3,8 +3,6 @@ class Solution {
         
         Stack<Integer> st = new Stack<>();
         
-        // st.push(asteroids[0]);
-
         int n = asteroids.length;
         for(int i=0;i<n;i++){
             int curr=asteroids[i];
@@ -16,19 +14,14 @@ class Solution {
                 }else if(Math.abs(curr)==Math.abs(st.peek())){
                     st.pop();
                     eqto=1;
-                    
-                    System.out.println("Stack size: "+st.size());   
                     break;                 
                 }else{
                     curr=st.pop();                            
                 }
             }
-            System.out.println("eqto: "+eqto);
             if(eqto==-1){
                 st.push(curr);
-                System.out.println("Added: "+curr);
             }
-            System.out.println("Stack size: "+st.size());
         }
 
 
