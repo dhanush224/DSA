@@ -7,7 +7,7 @@ class Solution {
         for(int i=0;i<n;i++){
             int curr=asteroids[i];
             int eqto=-1;
-            while(!st.empty() && Math.signum(st.peek())==1.0 && Math.signum(curr)==-1.0){
+            while(!st.empty() && st.peek()>0 && curr<0){
                 eqto=-1;
                 if(Math.abs(curr)>Math.abs(st.peek())){
                     st.pop();
