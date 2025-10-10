@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/dhanush224/DSA/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/dhanush224/DSA/tree/master/1646-kth-missing-positive-number) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/dhanush224/DSA/tree/master/1878-check-if-array-is-sorted-and-rotated) |
+| [2227-sum-of-subarray-ranges](https://github.com/dhanush224/DSA/tree/master/2227-sum-of-subarray-ranges) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/dhanush224/DSA/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2442-number-of-arithmetic-triplets](https://github.com/dhanush224/DSA/tree/master/2442-number-of-arithmetic-triplets) |
 | [3152-maximum-value-of-an-ordered-triplet-ii](https://github.com/dhanush224/DSA/tree/master/3152-maximum-value-of-an-ordered-triplet-ii) |
@@ -238,6 +239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0735-asteroid-collision](https://github.com/dhanush224/DSA/tree/master/0735-asteroid-collision) |
 | [0943-sum-of-subarray-minimums](https://github.com/dhanush224/DSA/tree/master/0943-sum-of-subarray-minimums) |
 | [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/dhanush224/DSA/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
+| [2227-sum-of-subarray-ranges](https://github.com/dhanush224/DSA/tree/master/2227-sum-of-subarray-ranges) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -287,4 +289,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/dhanush224/DSA/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/dhanush224/DSA/tree/master/0503-next-greater-element-ii) |
 | [0943-sum-of-subarray-minimums](https://github.com/dhanush224/DSA/tree/master/0943-sum-of-subarray-minimums) |
+| [2227-sum-of-subarray-ranges](https://github.com/dhanush224/DSA/tree/master/2227-sum-of-subarray-ranges) |
 <!---LeetCode Topics End-->
