@@ -15,6 +15,10 @@ class Solution {
             st.push(val);
         }
 
+        while(k!=0){
+            st.pop();
+            k--;
+        }
 
         StringBuilder sb = new StringBuilder();
         while(!st.empty()){
@@ -22,8 +26,7 @@ class Solution {
         }
 
         String str = sb.reverse().toString();
-        String str2 = str.substring(0,str.length()-k);
-        String result = str2.replaceFirst("^0+(?!$)", "");
+        String result = str.replaceFirst("^0+(?!$)", "");
 
         return result;
         
