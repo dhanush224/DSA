@@ -9,15 +9,12 @@ class Solution {
         for(int i=0;i<n;i++){
             int val = num.charAt(i) - '0';
             while(!st.empty() && val<st.peek() && k!=0){
-                int x = st.pop();
+                st.pop();
                 k--;
-                System.out.println("x: "+x+"; k: "+k);
             }            
-            System.out.print(val+", ");
             st.push(val);
         }
 
-        System.out.println(st);
 
         StringBuilder sb = new StringBuilder();
         while(!st.empty()){
