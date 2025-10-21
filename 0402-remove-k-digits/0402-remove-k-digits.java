@@ -1,7 +1,6 @@
 class Solution {
     public String removeKdigits(String num, int k) {
 
-        if(k==num.length()) return "0";
 
         Stack<Integer> st = new Stack<Integer>();
         int n = num.length();
@@ -26,9 +25,13 @@ class Solution {
         }
 
         String str = sb.reverse().toString();
-        String result = str.replaceFirst("^0+(?!$)", "");
 
-        return result;
+        int start=0;
+        while(start<str.length() && str.charAt(start)=='0') start++;
+
+        String result = str.substring(start);
+
+        return (result.isEmpty())? "0" : result;
         
     }
 }
