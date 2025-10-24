@@ -12,7 +12,7 @@ class Solution {
         } 
 
         if(n==Integer.MAX_VALUE && x<1) return 0.0;
-        else if(n<=-200000000) return 0.0;      
+        else if(n<=-2000000) return 0.0;      
 
         return calc(x,n);
     }
