@@ -12,21 +12,24 @@ class Solution {
         } 
 
         if(n==Integer.MAX_VALUE && x<1) return 0.0;
-        else if(n<=-200000000) return 0.0;
+        else if(n<=-200000000) return 0.0;      
 
+        return calc(x,n);
+    }
+
+    public double calc(double x, int n){
         if(n==0) return ans;
 
         if(n>0){
             ans*=x;
             n--;
-            myPow(x,n);
+            calc(x,n);
         }else{
             ans/=x;
             n++;
-            myPow(x,n);
+            calc(x,n);
         }
 
         return ans;
-      
     }
 }
