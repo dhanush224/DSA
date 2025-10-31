@@ -10,8 +10,8 @@ class Solution {
         if(n==0) return 1;
 
 
-        double res = calc(x,n/2);
-        return (n%2==0)? res*res : x*res*res;
+        double res = calc(x*x,n/2);
+        return (n%2==0)? res : x*res;
     }
     
 }
