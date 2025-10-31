@@ -1,35 +1,18 @@
 class Solution {
     double ans=1;
     public double myPow(double x, int n) {
-
-        if(x==0) return x;
-        if(x==1) return x;
-        if(n==0) return 1;
-
-        if(x==-1){
-            if(n%2==0) return -1*x;
-            else return x;
-        } 
-
-        if(n==Integer.MAX_VALUE && x<1) return 0.0;
-        else if(n<=-2000000) return 0.0;      
-
-        return calc(x,n);
+        ans=calc(x,Math.abs(n));
+        return (n>=0)? ans: 1/ans;
     }
 
     public double calc(double x, int n){
-        if(n==0) return ans;
+        if(x==1) return x;
+        if(n==1) return x;
+        if(n==0) return 1;
 
-        if(n>0){
-            ans*=x;
-            n--;
-            calc(x,n);
-        }else{
-            ans/=x;
-            n++;
-            calc(x,n);
-        }
 
-        return ans;
+        double res = calc(x,n/2);
+        return (n%2==0)? res*res : x*res*res;
     }
+    
 }
