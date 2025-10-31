@@ -7,7 +7,6 @@ class Solution {
 
     public double calc(double x, int n){
         if(x==1) return x;
-        if(n==1) return x;
         if(n==0) return 1;
 
 
