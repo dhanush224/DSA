@@ -1,14 +1,11 @@
 class Solution {
+    long MOD = (int)Math.pow(10,9)+7;
     public int countGoodNumbers(long n) {
-        int MOD = (int)Math.pow(10,9)+7;
+        long oddN = (n+1)/2;
+        long evenN = n/2;
 
-        if(n%2==0){
-            long res=(five(n/2)*four(n/2))%MOD;
-            return (int)res;
-        }else{
-            long res=(5*five(n/2)*four(n/2))%MOD;
-            return (int)res;
-        }                
+        return (int)(five(oddN)*four(evenN)%MOD);
+                      
     }
 
     public long five(long n){
