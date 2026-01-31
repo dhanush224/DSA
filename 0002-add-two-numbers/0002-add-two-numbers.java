@@ -17,7 +17,6 @@ class Solution {
         while(l1!=null || l2!=null){
             if(l1==null){
                 sum+=l2.val;
-                System.out.println("sum: "+sum);
                 if(sum>9){
                     ret.val=sum-10;
                     sum/=10;
@@ -28,7 +27,6 @@ class Solution {
                 }
             }else if(l2==null){
                 sum+=l1.val;
-                System.out.println("sum: "+sum);
                 if(sum>9){
                     ret.val=sum-10;
                     sum/=10;
@@ -39,29 +37,24 @@ class Solution {
                 }
             }else{
                 sum+=l1.val+l2.val;
-                System.out.println("sum: "+sum);
                 if(sum>9){
                     ret.val=sum-10;
                     sum/=10;
-                    System.out.println("sum: "+sum);
-
                 }
                 else{
                     ret.val=sum;
                     sum=0;
                 } 
             }
-            System.out.println("Node value: "+ret.val);
 
-            if(head==null){ head = new ListNode(ret.val,null);
-            // System.out.println("Head value: "+head.val);
-            node=head;
+            if(head==null){ 
+                head = new ListNode(ret.val,null);
+                node=head;
             }
             else{
                 node.next=new ListNode(ret.val,null);
                 node=node.next;                
             } 
-            System.out.println("Node value: "+node.val);
 
             if(l1!=null) l1=l1.next;
             if(l2!=null) l2=l2.next;
@@ -71,7 +64,6 @@ class Solution {
             node=node.next; 
         }
         node.next=null;           
-        System.out.println(head.val);
         return head;
     }
 }
