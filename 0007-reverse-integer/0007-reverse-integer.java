@@ -1,4 +1,5 @@
 class Solution {
+    //This only works in Java, so re-do for a common solution
     public int reverse(int x) {
         int sign = 1;
         int reversed = 0;
@@ -18,6 +19,7 @@ class Solution {
             revLength++;
             length--;
         }
+        //This only works in Java, so re-do for a common solution
         if(reversed==(int) Math.pow(2,31) || reversed==(int) -1*Math.pow(2,31)) return 0;
 
         return reversed;
