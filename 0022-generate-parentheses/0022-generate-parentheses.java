@@ -22,7 +22,6 @@ class Solution {
         }
 
         if(openN>=closedN && openN<n){
-            System.out.println("open:"+openN);
             sb.append('(');
             recursion(n,list,sb,openN+1,closedN);
             sb.deleteCharAt(sb.length()-1);
