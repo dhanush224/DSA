@@ -20,7 +20,7 @@ class Solution {
         if(root==null) return outerList;
 
         if(q.size()==0) q.add(root);
-        
+
         while(q.size()!=0){
             int n = q.size();
             List<Integer> list = new ArrayList<>();
@@ -29,7 +29,7 @@ class Solution {
                 if(q.peek().right!=null) q.add(q.peek().right);
                 list.add(q.remove().val);
             }
-            outerList.add(new ArrayList<>(list));
+            outerList.add(list);
         }
 
         return outerList;
