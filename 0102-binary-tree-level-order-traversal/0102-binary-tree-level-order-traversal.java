@@ -19,7 +19,7 @@ class Solution {
         List<List<Integer>> outerList = new ArrayList<>();
         if(root==null) return outerList;
 
-        if(q.size()==0) q.add(root);
+        if(q.isEmpty()) q.add(root);
 
         while(!q.isEmpty()){
             int n = q.size();
