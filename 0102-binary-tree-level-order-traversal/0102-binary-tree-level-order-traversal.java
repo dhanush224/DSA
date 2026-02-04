@@ -25,8 +25,9 @@ class Solution {
             int n = q.size();
             List<Integer> list = new ArrayList<>();
             for(int i=0;i<n;i++){
-                if(q.peek().left!=null) q.add(q.peek().left);
-                if(q.peek().right!=null) q.add(q.peek().right);
+                TreeNode node = q.peek();
+                if(node.left!=null) q.add(node.left);
+                if(node.right!=null) q.add(node.right);
                 list.add(q.remove().val);
             }
             outerList.add(list);
