@@ -36,7 +36,6 @@ class Solution {
         total += recursion(node.left,highestUntilNow,total);
         total += recursion(node.right,highestUntilNow,total);
 
-        // System.out.println("Node Value: "+node.val+"; X: "+x+", Y: "+y);
 
         return total;
 
