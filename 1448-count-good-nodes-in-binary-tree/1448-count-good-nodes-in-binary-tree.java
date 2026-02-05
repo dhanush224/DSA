@@ -16,10 +16,8 @@
 class Solution {
     public int goodNodes(TreeNode root) {
 
-        if(root.left==null && root.right==null) return 1;
         int total=recursion(root,Integer.MIN_VALUE,0);
 
-        // if(root.left!=null & root.right!=null) total++;
         return total;
         
     }
