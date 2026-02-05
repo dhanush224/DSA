@@ -124,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/dhanush224/DSA/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/dhanush224/DSA/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/dhanush224/DSA/tree/master/0022-generate-parentheses) |
+| [0043-multiply-strings](https://github.com/dhanush224/DSA/tree/master/0043-multiply-strings) |
 | [0125-valid-palindrome](https://github.com/dhanush224/DSA/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/dhanush224/DSA/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/dhanush224/DSA/tree/master/0205-isomorphic-strings) |
@@ -141,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0007-reverse-integer](https://github.com/dhanush224/DSA/tree/master/0007-reverse-integer) |
 | [0012-integer-to-roman](https://github.com/dhanush224/DSA/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/dhanush224/DSA/tree/master/0013-roman-to-integer) |
+| [0043-multiply-strings](https://github.com/dhanush224/DSA/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/dhanush224/DSA/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/dhanush224/DSA/tree/master/0050-powx-n) |
 | [0189-rotate-array](https://github.com/dhanush224/DSA/tree/master/0189-rotate-array) |
@@ -210,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0043-multiply-strings](https://github.com/dhanush224/DSA/tree/master/0043-multiply-strings) |
 | [0735-asteroid-collision](https://github.com/dhanush224/DSA/tree/master/0735-asteroid-collision) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/dhanush224/DSA/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Counting
