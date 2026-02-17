@@ -16,15 +16,15 @@
 class Solution {
     public boolean isBalanced(TreeNode root) {
         if(root==null) return true;
-        if(recursion(root,root,0,0)<0) return false;
+        if(recursion(root,0,0)<0) return false;
         else return true;         
     }
 
-    public int recursion(TreeNode root, TreeNode node, int depth, int maxDepth){
+    public int recursion(TreeNode node, int depth, int maxDepth){
         if(node==null) return depth;
 
-        int x=recursion(root,node.left,depth+1,maxDepth);
-        int y=recursion(root,node.right,depth+1,maxDepth);
+        int x=recursion(node.left,depth+1,maxDepth);
+        int y=recursion(node.right,depth+1,maxDepth);
 
         int diff= Math.max(x-y,y-x);
 
