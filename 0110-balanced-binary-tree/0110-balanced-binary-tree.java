@@ -22,11 +22,9 @@ class Solution {
 
     public int recursion(TreeNode root, TreeNode node, int depth, int maxDepth){
         if(node==null) return depth;
-        int x=0;
-        int y=0;
 
-        x = recursion(root,node.left,depth+1,maxDepth);
-        y = recursion(root,node.right,depth+1,maxDepth);
+        int x=recursion(root,node.left,depth+1,maxDepth);
+        int y=recursion(root,node.right,depth+1,maxDepth);
 
         int diff= Math.max(x-y,y-x);
 
@@ -34,7 +32,7 @@ class Solution {
         else maxDepth=y;
 
         if(diff>1) {
-            return Integer.MIN_VALUE;
+            return -1;
         }
 
         return maxDepth;
