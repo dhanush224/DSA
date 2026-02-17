@@ -23,15 +23,12 @@ class Solution {
     }
 
     public int recursion(TreeNode node, int length, int finalLength){
-        if(node.left==null && node.right==null){
-            return length;
+        if(node==null){
+            return length-1;
         }
 
-        int x=0;
-        int y = 0;
-
-        if(node.left!=null) x = recursion(node.left,length+1,finalLength);
-        if(node.right!=null) y = recursion(node.right,length+1,finalLength);
+        int x = recursion(node.left,length+1,finalLength);
+        int y = recursion(node.right,length+1,finalLength);
 
         if(x>y)finalLength = x;
         else finalLength = y;
