@@ -37,11 +37,13 @@ class Solution {
 
         maxSum = Math.max(res,maxSum);
 
-        if(left>right) res=left;
-        else res=right;
+        if(res==node.val+x+y){
+            if(left>right) res=left;
+            else res=right;
 
-        if(node.val>res) res=node.val;
-        
+            if(node.val>res) res=node.val;
+        }
+
         return res;
     }
 }
