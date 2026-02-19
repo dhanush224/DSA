@@ -33,13 +33,15 @@ class Solution {
         int right = node.val+y;
         if(left>res) res = left;
         if(right>res) res = right;
-        maxSum = Math.max(node.val,Math.max(res,maxSum));
-
-        if(left>right) res = left;
-        else res = right;
-
         if(node.val>res) res = node.val;
 
+        maxSum = Math.max(res,maxSum);
+
+        if(left>right) res=left;
+        else res=right;
+
+        if(node.val>res) res=node.val;
+        
         return res;
     }
 }
