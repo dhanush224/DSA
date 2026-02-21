@@ -32,23 +32,19 @@ class Solution {
                 list.add(node.val);
             }
             outerList.add(new ArrayList<>(list));
+
+            Deque<TreeNode> newqueue = new ArrayDeque<>();
+            for(int i=0;i<n;i++){
+                TreeNode node = q.removeLast();
+                newqueue.add(node);
+            }  
             if(level%2==0){
-                Deque<TreeNode> newqueue = new ArrayDeque<>();
-                for(int i=0;i<n;i++){
-                    TreeNode node = q.removeLast();
-                    newqueue.add(node);
-                }  
                 for(int i=0;i<n;i++){
                     TreeNode node = newqueue.remove();
                     if(node.right!=null) q.add(node.right);
                     if(node.left!=null) q.add(node.left);
                 }
             }else{
-                Deque<TreeNode> newqueue = new ArrayDeque<>();
-                for(int i=0;i<n;i++){
-                    TreeNode node = q.removeLast();
-                    newqueue.add(node);
-                }   
                 for(int i=0;i<n;i++){
                     TreeNode node = newqueue.remove();
                     if(node.left!=null) q.add(node.left);
