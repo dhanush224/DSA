@@ -31,26 +31,15 @@ class Solution {
             for(TreeNode node: q){
                 list.add(node.val);
             }
+            if(level%2!=0) Collections.reverse(list);
             outerList.add(new ArrayList<>(list));
 
-            Deque<TreeNode> newqueue = new ArrayDeque<>();
             for(int i=0;i<n;i++){
-                TreeNode node = q.removeLast();
-                newqueue.add(node);
-            }  
-            if(level%2==0){
-                for(int i=0;i<n;i++){
-                    TreeNode node = newqueue.remove();
-                    if(node.right!=null) q.add(node.right);
-                    if(node.left!=null) q.add(node.left);
-                }
-            }else{
-                for(int i=0;i<n;i++){
-                    TreeNode node = newqueue.remove();
-                    if(node.left!=null) q.add(node.left);
-                    if(node.right!=null) q.add(node.right);
-                }
+                TreeNode node = q.remove();
+                if(node.left!=null) q.add(node.left);
+                if(node.right!=null) q.add(node.right);
             }
+
             level++;
         }
 
