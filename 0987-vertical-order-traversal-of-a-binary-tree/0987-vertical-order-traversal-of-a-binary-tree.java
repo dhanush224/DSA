@@ -66,6 +66,8 @@ class Solution {
             List<Integer> innerList = new ArrayList<>();
             for(PriorityQueue<Integer> q: tMap.values()){
                 int n = q.size();
+                //We are making a priority queue for each node most of the times
+                // System.out.println(n);
                 for(int i=0;i<n;i++){
                     int val = q.remove();
                     innerList.add(val);
