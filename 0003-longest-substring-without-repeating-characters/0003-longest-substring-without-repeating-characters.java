@@ -16,7 +16,7 @@ class Solution {
                 i++;
             }else{
                 map.put(s.charAt(j),1);
-                maxLength = Math.max(maxLength,j-i+1);
+                if(j-i+1>maxLength) maxLength=j-i+1;
             } 
         }
 
