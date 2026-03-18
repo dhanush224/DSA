@@ -11,8 +11,7 @@ class Solution {
                 i++;
             }
             if(nums[j]==0) zeroes++;
-            if((j-i+1)>longest) longest=j-i+1;
-
+            longest = Math.max(longest,j-i+1);
         }
 
         return longest-1;
