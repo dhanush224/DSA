@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0943-sum-of-subarray-minimums](https://github.com/dhanush224/DSA/tree/master/0943-sum-of-subarray-minimums) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/dhanush224/DSA/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/dhanush224/DSA/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+| [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/dhanush224/DSA/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/dhanush224/DSA/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/dhanush224/DSA/tree/master/1646-kth-missing-positive-number) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/dhanush224/DSA/tree/master/1878-check-if-array-is-sorted-and-rotated) |
@@ -195,6 +196,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0152-maximum-product-subarray](https://github.com/dhanush224/DSA/tree/master/0152-maximum-product-subarray) |
 | [0410-split-array-largest-sum](https://github.com/dhanush224/DSA/tree/master/0410-split-array-largest-sum) |
 | [0943-sum-of-subarray-minimums](https://github.com/dhanush224/DSA/tree/master/0943-sum-of-subarray-minimums) |
+| [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/dhanush224/DSA/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 ## Greedy
 |  |
 | ------- |
@@ -238,6 +240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/dhanush224/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
+| [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/dhanush224/DSA/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 ## String Matching
 |  |
 | ------- |
