@@ -18,6 +18,7 @@ class Solution {
                 map.put(updateKey,map.get(updateKey)-1);
                 i++;
                 length=j-i+1;
+                if(j==n-1 && length<maxLength)break;
             }
             if(i==n)break;
             maxLength=Math.max(length,maxLength);
