@@ -1,7 +1,6 @@
 class Solution {
     public int characterReplacement(String s, int k) {
 
-        // if(s.length()==1) return 1;
 
         Map<Integer,Integer> map = new HashMap<>();
         int maxLength=0;
