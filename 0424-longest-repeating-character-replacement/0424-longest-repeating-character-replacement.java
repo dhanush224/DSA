@@ -7,20 +7,20 @@ class Solution {
         int maxLength=0;
 
         int i =0;
-        for(int j=0;j<s.length();j++){
+        int n = s.length();
+        for(int j=0;j<n;j++){
             int key = (int)s.charAt(j);
             if(!map.containsKey(key)) map.put(key,1);
             else map.put(key,map.get(key)+1);
 
             int length = j-i+1;
-            while(length-maxCount(map)>k){
+            while(length-maxCount(map)>k &&i<n){
                 int updateKey = (int)s.charAt(i);
                 map.put(updateKey,map.get(updateKey)-1);
                 i++;
                 length=j-i+1;
-                if(i==s.length())break;
             }
-            if(i==s.length())break;
+            if(i==n)break;
             maxLength=Math.max(length,maxLength);
             
         }
