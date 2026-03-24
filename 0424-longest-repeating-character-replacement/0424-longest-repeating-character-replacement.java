@@ -1,7 +1,6 @@
 class Solution {
     public int characterReplacement(String s, int k) {
 
-
         Map<Integer,Integer> map = new HashMap<>();
         int maxLength=0;
         int maxFreq=0;
@@ -27,14 +26,6 @@ class Solution {
         }
 
         return maxLength;
-    }
-
-    public int maxCount(Map<Integer,Integer> map){
-        int max=0;
-        for(Integer val: map.values()){
-            max=Math.max(val,max);
-        }
-        return max;
     }
 
 }
