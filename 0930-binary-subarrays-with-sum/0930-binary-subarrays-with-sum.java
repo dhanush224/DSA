@@ -5,13 +5,28 @@ class Solution {
         int total=0;
         int n = nums.length;
 
-        for(int i=0;i<n;i++){
-            sum=0;
-            for(int j=i;j<n;j++){
-                sum+=nums[j];
-                if(sum==goal)total++;
-                if(sum>goal)break;
+        int i=0,j=0;
+
+        while(j<n){
+            sum+=nums[j];
+            while(sum>goal && i<=j){
+                sum-=nums[i];
+                i++;
             }
+            total+=j-i+1;
+            j++;
+        }
+
+        sum=0;
+        i=0;j=0;
+        while(j<n){
+            sum+=nums[j];
+            while(sum>=goal && i<=j){
+                sum-=nums[i];
+                i++;
+            }
+            total-=j-i+1;
+            j++;
         }
         return total;        
     }
