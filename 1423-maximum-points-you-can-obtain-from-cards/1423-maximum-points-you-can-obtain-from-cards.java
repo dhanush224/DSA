@@ -13,7 +13,7 @@ class Solution {
         }
         maxSum=sum;
 
-        if(k==n) return maxSum;
+        // if(k==n) return maxSum;
 
         j=n-k;
         while(i<k){
