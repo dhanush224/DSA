@@ -1,35 +1,24 @@
 class Solution {
     public int numberOfSubarrays(int[] nums, int k) {
 
+        int odds=0;
         int total=0;
 
-        int sum=0;
-        int i=0,j=0;
+        int i=0,m=0,j=0;
         int n = nums.length;
 
-        while(j<n){
-            sum+=nums[j]%2;
-            while(sum>k && i<=j){
-                sum-=nums[i]%2;
+        for(j=0;j<n;j++){
+            if(nums[j]%2!=0)odds++;
+            while(odds>k){
+                if(nums[i]%2!=0)odds--;
                 i++;
             }
-            total+=j-i+1;
-            j++;
-        }
-
-        sum=0;
-        j=0;
-        i=0;
-        while(j<n){
-            sum+=nums[j]%2;
-            while(sum>=k && i<=j){
-                sum-=nums[i]%2;
-                i++;
+            if(odds==k){
+                m=i;
+                while(nums[m]%2==0)m++;
+                total+=m-i+1;
             }
-            total-=j-i+1;
-            j++;
         }
-
         
         return total;
         
