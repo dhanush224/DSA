@@ -7,10 +7,10 @@ class Solution {
         int[] arr = {0,0,0};
 
         for(int j=0;j<n;j++){
-            int c = (int)s.charAt(j)-(int)('a');
+            int c = (int)s.charAt(j)-97;
             arr[c]++;
             while(arr[0]>0 && arr[1]>0 && arr[2]>0){
-                int ci = (int)s.charAt(i)-(int)('a');
+                int ci = (int)s.charAt(i)-97;
                 total+=1+(n-1-j);
                 arr[ci]--;
                 i++;                
