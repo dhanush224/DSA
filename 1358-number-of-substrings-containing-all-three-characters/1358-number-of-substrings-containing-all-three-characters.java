@@ -20,10 +20,11 @@ class Solution {
                 if(!map.containsKey(c))map.put(c,1);
                 else map.put(c,map.get(c)+1);
             }
-            while(contains3Char(map)==true){
+            while(map.size()==3){
                 Character ci = s.charAt(i);
                 total+=1+(n-1-j);
-                map.put(ci,map.get(ci)-1);
+                if(map.get(ci)==1) map.remove(ci);
+                else map.put(ci,map.get(ci)-1);
                 i++;                
             }
 
@@ -33,15 +34,5 @@ class Solution {
         return total;        
     }
 
-    public boolean contains3Char(Map<Character,Integer> map){
-        int flag=1;
 
-        for(Integer val: map.values()){
-            if(val==0)flag=0;
-        }
-
-        if(map.size()==3 && flag==1) return true;
-        else return false;
-
-    }
 }
