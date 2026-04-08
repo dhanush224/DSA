@@ -1,37 +1,39 @@
 class Solution {
+    List<String> list = new ArrayList<>();
     public List<String> generateParenthesis(int n) {
-        List<String> list = new ArrayList<>();
+
         StringBuilder sb = new StringBuilder();
-        recursion(n, list, sb, 0,0);
+        return recursion(n, sb, 0, 0, 0);
+
+    }
+
+    public List<String> recursion(int n, StringBuilder sb, int positivity, int i, int left){
+        
+        if(i==2*n){
+            list.add(sb.toString());
+            return list;
+        }
+
+        if(positivity==0){
+            sb.append('(');
+            recursion(n,sb,positivity+1,i+1,left+1);
+            sb.deleteCharAt(i);
+        }else{
+            if(left<n){
+                sb.append('(');
+                recursion(n,sb,positivity+1,i+1,left+1);
+                sb.deleteCharAt(i);
+                sb.append(')');
+                recursion(n,sb,positivity-1,i+1,left);
+                sb.deleteCharAt(i);
+            }else{
+                sb.append(')');
+                recursion(n,sb,positivity-1,i+1,left);
+                sb.deleteCharAt(i);
+            }
+        }
 
         return list;
     }
 
-    public void recursion(int n, List<String> list, StringBuilder sb, int openN, int closedN) {
-
-        if(openN==closedN && closedN==n){
-            list.add(sb.toString());
-            return;
-        }
-
-
-        if(openN==n && closedN<n){
-            sb.append(')');
-            recursion(n,list,sb,openN,closedN+1);
-            sb.deleteCharAt(sb.length()-1);
-        }
-
-        if(openN>=closedN && openN<n){
-            sb.append('(');
-            recursion(n,list,sb,openN+1,closedN);
-            sb.deleteCharAt(sb.length()-1);
-            if(openN>closedN){
-                sb.append(')');
-                recursion(n,list,sb,openN,closedN+1);
-                sb.deleteCharAt(sb.length()-1);
-            }
-
-        }
-
-    }
 }
