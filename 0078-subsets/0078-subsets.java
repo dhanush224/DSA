@@ -1,24 +1,27 @@
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
 
-        List<List<Integer>> outerList =new ArrayList<>();
-        List<Integer> list = new ArrayList<>();
-        printSubsets(0,list,nums,outerList);   
-
-        return outerList;     
+        List<List<Integer>> list = new ArrayList<>();
+        List<Integer> innerList = new ArrayList<>();
+        
+        recursion(list, innerList, nums, 0);
+        return list;
     }
 
-    public void printSubsets(int i, List<Integer> list, int[] nums, List<List<Integer>> outerList) {
-
+    public void recursion(List<List<Integer>> list, List<Integer>innerList, int[] nums, int i){
+        
         if(i==nums.length){
-            outerList.add(new ArrayList<>(list));
+            list.add(new ArrayList<>(innerList));
             return;
         }
-        list.add(nums[i]);
-        printSubsets(i+1,list,nums,outerList);
-        list.remove(list.size()-1);
-        printSubsets(i+1,list,nums,outerList);
 
+        innerList.add(nums[i]);
+        recursion(list, innerList, nums, i+1);
+
+        innerList.remove(innerList.size()-1);
+        recursion(list, innerList, nums, i+1);
+
+        return;
 
     }
 
