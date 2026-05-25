@@ -8,17 +8,14 @@ class Solution {
     }
 
     public List<List<Integer>> recursion(List<List<Integer>> ans, List<Integer> list, int n, int k, int sum, int currSum){
-        if(currSum>sum){
-            return ans;
-        }
+
         if(currSum==sum && list.size()==k){
             ans.add(new ArrayList(list));
             return ans;
         }
-        if(list.size()>=k){
+        if(currSum>sum || list.size()>=k ||n>9){
             return ans;
         }
-        if(n>9) return ans;
 
         list.add(n);
         recursion(ans, list, n+1,k,sum, currSum+n);
