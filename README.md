@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dhanush224/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/dhanush224/DSA/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/dhanush224/DSA/tree/master/0189-rotate-array) |
+| [0216-combination-sum-iii](https://github.com/dhanush224/DSA/tree/master/0216-combination-sum-iii) |
 | [0217-contains-duplicate](https://github.com/dhanush224/DSA/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/dhanush224/DSA/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/dhanush224/DSA/tree/master/0268-missing-number) |
@@ -390,6 +391,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/dhanush224/DSA/tree/master/0040-combination-sum-ii) |
 | [0078-subsets](https://github.com/dhanush224/DSA/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/dhanush224/DSA/tree/master/0090-subsets-ii) |
+| [0216-combination-sum-iii](https://github.com/dhanush224/DSA/tree/master/0216-combination-sum-iii) |
 ## Breadth-First Search
 |  |
 | ------- |
