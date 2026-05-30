@@ -1,37 +1,29 @@
 class Solution {
     public void moveZeroes(int[] nums) {
-        int zeroCount=0;
+
+        int j=0;
+
         for(int i=0;i<nums.length;i++){
-            if(nums[i]==0){
-                zeroCount++;
+            j=i;
+            while(j<nums.length && nums[j]==0)j++;
+
+            if(j<nums.length){
+                int temp = nums[i];
+                nums[i]=nums[j];
+                nums[j]=temp;
+            }
+
+            if(j==nums.length && i<nums.length){
+                nums[i]=0;
             }
         }
 
-        for(int i=0;i<nums.length;i++){
-            if(nums[i]==0){
-                int index=-1;
-                index = findNextNonZeroIndex(i+1,nums);
-                if(index!=-1){
-                    nums[i]=nums[index];
-                    nums[index]=0;
-                }else{
-                    break;
-                }
-            }
-            zeroCount--;
-        }        
+
+     
 
     
         
     }
 
-    public int findNextNonZeroIndex(int i, int[] nums){
-        for(int j=i;j<nums.length;j++){
-            if(nums[j]!=0){
-                return j;
-            
-            }
-        }
-        return -1;
-    }
+
 }
