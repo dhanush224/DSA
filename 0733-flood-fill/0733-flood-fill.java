@@ -20,8 +20,6 @@ class Solution {
 
         int[][] dirs = new int[][]{{-1,0},{1,0},{0,1},{0,-1}};
         while(!q.isEmpty()){
-            int size = q.size();
-            for(int i=0;i<size;i++){
                 int[] arr = q.peek();
                 int r=arr[0];
                 int c=arr[1];
@@ -38,7 +36,6 @@ class Solution {
                         q.add(new int[]{nr,nc});
                     }
                 }
-            }
 
         }
 
