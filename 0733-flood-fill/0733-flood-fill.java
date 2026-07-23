@@ -20,12 +20,9 @@ class Solution {
 
         int[][] dirs = new int[][]{{-1,0},{1,0},{0,1},{0,-1}};
         while(!q.isEmpty()){
-                int[] arr = q.peek();
+                int[] arr = q.poll();
                 int r=arr[0];
                 int c=arr[1];
-
-                q.remove();
-
 
                 for(int[] d: dirs){
                     int nr = r+d[0];
