@@ -4,12 +4,18 @@ class Solution {
         Queue<int[]> q = new ArrayDeque<>();
 
         boolean problem = false;
+        int freshOranges=0;
+
         for(int i=0;i<grid.length;i++){
             for(int j=0;j<grid[0].length;j++){
-                if(grid[i][j]==1) problem=true;
+                if(grid[i][j]==1) {
+                    problem=true;
+                    freshOranges++;
+                }
             }
         } 
         if(problem==false) return 0;
+
 
         for(int i=0;i<grid.length;i++){
             for(int j=0;j<grid[0].length;j++){
@@ -30,25 +36,18 @@ class Solution {
                     int nr = front[0] + d[0];
                     int nc = front[1] + d[1];
 
-
-
                     if(nr>=0 && nr<grid.length && nc>=0 && nc<grid[0].length && grid[nr][nc]==1){
                         grid[nr][nc]=2;
-
                         q.add(new int[]{nr,nc});
+                        freshOranges--;
                     }
                 }
             }
             time++;
+            if(freshOranges==0) break; 
         }
 
-        for(int i=0;i<grid.length;i++){
-            for(int j=0;j<grid[0].length;j++){
-                if(grid[i][j]==1) return -1;
-            }
-        } 
-
-
-        return time-1;
+        if(freshOranges!=0) return -1;
+        else return time;
     }
 }
