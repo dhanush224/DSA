@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0930-binary-subarrays-with-sum](https://github.com/dhanush224/DSA/tree/master/0930-binary-subarrays-with-sum) |
 | [0943-sum-of-subarray-minimums](https://github.com/dhanush224/DSA/tree/master/0943-sum-of-subarray-minimums) |
 | [0992-subarrays-with-k-different-integers](https://github.com/dhanush224/DSA/tree/master/0992-subarrays-with-k-different-integers) |
+| [0994-rotting-oranges](https://github.com/dhanush224/DSA/tree/master/0994-rotting-oranges) |
 | [1004-max-consecutive-ones-iii](https://github.com/dhanush224/DSA/tree/master/1004-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/dhanush224/DSA/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1248-count-number-of-nice-subarrays](https://github.com/dhanush224/DSA/tree/master/1248-count-number-of-nice-subarrays) |
@@ -257,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/dhanush224/DSA/tree/master/0048-rotate-image) |
 | [0073-set-matrix-zeroes](https://github.com/dhanush224/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
+| [0994-rotting-oranges](https://github.com/dhanush224/DSA/tree/master/0994-rotting-oranges) |
 ## Union Find
 |  |
 | ------- |
@@ -408,6 +410,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/dhanush224/DSA/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/dhanush224/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
+| [0994-rotting-oranges](https://github.com/dhanush224/DSA/tree/master/0994-rotting-oranges) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/dhanush224/DSA/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Union-Find
 |  |
