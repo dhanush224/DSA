@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dhanush224/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/dhanush224/DSA/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/dhanush224/DSA/tree/master/0189-rotate-array) |
+| [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
 | [0216-combination-sum-iii](https://github.com/dhanush224/DSA/tree/master/0216-combination-sum-iii) |
 | [0217-contains-duplicate](https://github.com/dhanush224/DSA/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/dhanush224/DSA/tree/master/0229-majority-element-ii) |
@@ -260,6 +261,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/dhanush224/DSA/tree/master/0048-rotate-image) |
 | [0073-set-matrix-zeroes](https://github.com/dhanush224/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0130-surrounded-regions](https://github.com/dhanush224/DSA/tree/master/0130-surrounded-regions) |
+| [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
 | [0994-rotting-oranges](https://github.com/dhanush224/DSA/tree/master/0994-rotting-oranges) |
 | [1020-number-of-enclaves](https://github.com/dhanush224/DSA/tree/master/1020-number-of-enclaves) |
@@ -364,6 +366,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0144-binary-tree-preorder-traversal](https://github.com/dhanush224/DSA/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/dhanush224/DSA/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/dhanush224/DSA/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
 | [0543-diameter-of-binary-tree](https://github.com/dhanush224/DSA/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/dhanush224/DSA/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
@@ -414,6 +417,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/dhanush224/DSA/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0130-surrounded-regions](https://github.com/dhanush224/DSA/tree/master/0130-surrounded-regions) |
 | [0199-binary-tree-right-side-view](https://github.com/dhanush224/DSA/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/dhanush224/DSA/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/dhanush224/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
@@ -424,6 +428,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0130-surrounded-regions](https://github.com/dhanush224/DSA/tree/master/0130-surrounded-regions) |
+| [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/dhanush224/DSA/tree/master/0547-number-of-provinces) |
 | [1020-number-of-enclaves](https://github.com/dhanush224/DSA/tree/master/1020-number-of-enclaves) |
 ## Graph Theory
