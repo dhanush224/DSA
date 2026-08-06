@@ -15,29 +15,28 @@
  */
 class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
-        
-        int[] result = recursion(root,0,0);
 
-        return result[1]-1;
+        if(root==null) return 0;
+
+        int[] arr = recursion(root);
+
+        return arr[1];    
     }
 
-    public int[] recursion(TreeNode node, int maxLength, int maxDiameter){
-        if(node==null) {
-            int[] arr = new int[2];
-            return arr;
-        }
+    public int[] recursion(TreeNode node){
+        if(node==null) return new int[]{-1,0};
 
-        int[] arr = new int[2];
-        int[] arrx = recursion(node.left,maxLength,maxDiameter);
-        int[] arry = recursion(node.right,maxLength,maxDiameter);
+        int[] left = recursion(node.left);
+        int leftH = 1+left[0];
+        int[] right = recursion(node.right);
+        int rightH = 1+right[0];
 
-        maxLength = 1+Math.max(arrx[0],arry[0]);
-        int diameter = 1+arrx[0]+arry[0];
-        maxDiameter=Math.max(diameter,Math.max(arrx[1],arry[1]));
-        arr[0] = maxLength;
-        arr[1] = maxDiameter;
+        int height1 = leftH+rightH;
+        int height2 = Math.max(leftH,rightH);
+        height1 = Math.max(height1,Math.max(left[1],right[1]));
+        int[] arr = new int[]{height2,height1};
 
         return arr;
-
     }
+
 }
