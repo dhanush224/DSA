@@ -16,25 +16,24 @@
 class Solution {
     public boolean isBalanced(TreeNode root) {
         if(root==null) return true;
-        if(recursion(root,0,0)<0) return false;
-        else return true;         
+
+        if(recursion(root,0,0)>=0) return true;
+        else return false;
+
     }
 
     public int recursion(TreeNode node, int depth, int maxDepth){
-        if(node==null) return depth;
+        if(node==null) return depth-1;
 
-        int x=recursion(node.left,depth+1,maxDepth);
-        int y=recursion(node.right,depth+1,maxDepth);
+        int left = recursion(node.left, depth+1, Math.max(depth+1,maxDepth));
+        int right = recursion(node.right, depth+1, Math.max(depth+1,maxDepth));
+        int diff = 0;
+        if(left>right) diff = left-right;
+        else diff = right-left;
 
-        int diff= Math.max(x-y,y-x);
-
-        if(x>y) maxDepth=x;
-        else maxDepth=y;
-
-        if(diff>1) {
-            return -1;
-        }
-
-        return maxDepth;
+        if(diff>1 || diff<0) return Integer.MIN_VALUE;
+        else return Math.max(left,right);
     }
+
+
 }
