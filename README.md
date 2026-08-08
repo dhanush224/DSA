@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0540-single-element-in-a-sorted-array](https://github.com/dhanush224/DSA/tree/master/0540-single-element-in-a-sorted-array) |
 | [0542-01-matrix](https://github.com/dhanush224/DSA/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/dhanush224/DSA/tree/master/0560-subarray-sum-equals-k) |
+| [0695-max-area-of-island](https://github.com/dhanush224/DSA/tree/master/0695-max-area-of-island) |
 | [0704-binary-search](https://github.com/dhanush224/DSA/tree/master/0704-binary-search) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/dhanush224/DSA/tree/master/0735-asteroid-collision) |
@@ -267,6 +268,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/dhanush224/DSA/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
 | [0542-01-matrix](https://github.com/dhanush224/DSA/tree/master/0542-01-matrix) |
+| [0695-max-area-of-island](https://github.com/dhanush224/DSA/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
 | [0994-rotting-oranges](https://github.com/dhanush224/DSA/tree/master/0994-rotting-oranges) |
 | [1020-number-of-enclaves](https://github.com/dhanush224/DSA/tree/master/1020-number-of-enclaves) |
@@ -378,6 +380,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/dhanush224/DSA/tree/master/0226-invert-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/dhanush224/DSA/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/dhanush224/DSA/tree/master/0547-number-of-provinces) |
+| [0695-max-area-of-island](https://github.com/dhanush224/DSA/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/dhanush224/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1020-number-of-enclaves](https://github.com/dhanush224/DSA/tree/master/1020-number-of-enclaves) |
@@ -433,6 +436,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/dhanush224/DSA/tree/master/0226-invert-binary-tree) |
 | [0542-01-matrix](https://github.com/dhanush224/DSA/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/dhanush224/DSA/tree/master/0547-number-of-provinces) |
+| [0695-max-area-of-island](https://github.com/dhanush224/DSA/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/dhanush224/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [0994-rotting-oranges](https://github.com/dhanush224/DSA/tree/master/0994-rotting-oranges) |
@@ -444,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/dhanush224/DSA/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/dhanush224/DSA/tree/master/0547-number-of-provinces) |
+| [0695-max-area-of-island](https://github.com/dhanush224/DSA/tree/master/0695-max-area-of-island) |
 | [1020-number-of-enclaves](https://github.com/dhanush224/DSA/tree/master/1020-number-of-enclaves) |
 ## Graph Theory
 |  |
