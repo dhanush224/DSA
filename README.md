@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/dhanush224/DSA/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/dhanush224/DSA/tree/master/0503-next-greater-element-ii) |
 | [0540-single-element-in-a-sorted-array](https://github.com/dhanush224/DSA/tree/master/0540-single-element-in-a-sorted-array) |
+| [0542-01-matrix](https://github.com/dhanush224/DSA/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/dhanush224/DSA/tree/master/0560-subarray-sum-equals-k) |
 | [0704-binary-search](https://github.com/dhanush224/DSA/tree/master/0704-binary-search) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
@@ -220,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0124-binary-tree-maximum-path-sum](https://github.com/dhanush224/DSA/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0152-maximum-product-subarray](https://github.com/dhanush224/DSA/tree/master/0152-maximum-product-subarray) |
 | [0410-split-array-largest-sum](https://github.com/dhanush224/DSA/tree/master/0410-split-array-largest-sum) |
+| [0542-01-matrix](https://github.com/dhanush224/DSA/tree/master/0542-01-matrix) |
 | [0943-sum-of-subarray-minimums](https://github.com/dhanush224/DSA/tree/master/0943-sum-of-subarray-minimums) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/dhanush224/DSA/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 ## Greedy
@@ -264,6 +266,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/dhanush224/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0130-surrounded-regions](https://github.com/dhanush224/DSA/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
+| [0542-01-matrix](https://github.com/dhanush224/DSA/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
 | [0994-rotting-oranges](https://github.com/dhanush224/DSA/tree/master/0994-rotting-oranges) |
 | [1020-number-of-enclaves](https://github.com/dhanush224/DSA/tree/master/1020-number-of-enclaves) |
@@ -428,6 +431,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0199-binary-tree-right-side-view](https://github.com/dhanush224/DSA/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/dhanush224/DSA/tree/master/0226-invert-binary-tree) |
+| [0542-01-matrix](https://github.com/dhanush224/DSA/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/dhanush224/DSA/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/dhanush224/DSA/tree/master/0733-flood-fill) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/dhanush224/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
