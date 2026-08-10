@@ -12,12 +12,14 @@ class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 
         TreeNode node = root;
+        int one = p.val;
+        int two = q.val;
 
-        while((node.val>p.val && node.val>q.val) || (node.val<p.val && node.val<q.val)){
-            if(node.val>p.val && node.val>q.val) node=node.left;
+        while((node.val>one && node.val>two) || (node.val<one && node.val<two)){
+            if(node.val>one && node.val>two) node=node.left;
             else node = node.right;
 
-            if((p.val<node.val && node.val<q.val) || (q.val<node.val && node.val<p.val)) break;
+            if((one<node.val && node.val<two) || (two<node.val && node.val<one)) break;
         }
 
         return node;               
