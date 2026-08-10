@@ -15,11 +15,11 @@ class Solution {
         int one = p.val;
         int two = q.val;
 
-        while((node.val>one && node.val>two) || (node.val<one && node.val<two)){
+        while(true){
             if(node.val>one && node.val>two) node=node.left;
-            else node = node.right;
+            else if(node.val<one && node.val<two) node = node.right;
 
-            if((one<node.val && node.val<two)) break;
+            if((one<=node.val && node.val<=two) || (two<=node.val && node.val<=one)) break;
         }
 
         return node;               
