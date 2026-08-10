@@ -19,7 +19,7 @@ class Solution {
             if(node.val>one && node.val>two) node=node.left;
             else node = node.right;
 
-            if((one<node.val && node.val<two) || (two<node.val && node.val<one)) break;
+            if((one<node.val && node.val<two)) break;
         }
 
         return node;               
