@@ -23,7 +23,6 @@ class Solution {
     public void recursion(TreeNode node, List<Integer> list, int k){
         if(node==null) return;
 
-        if(list.size()==k) return;
         recursion(node.left,list,k);
         if(list.size()==k) return;
         list.add(node.val);
