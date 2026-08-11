@@ -16,21 +16,20 @@
 class Solution {
     public int kthSmallest(TreeNode root, int k) {
         List<Integer> list = new ArrayList<>();
-        recursion(root,list,0,k);
+        recursion(root,list,k);
         return list.get(list.size()-1);        
     }
 
-    public int recursion(TreeNode node, List<Integer> list, int count, int k){
-        if(node==null) return count;
+    public void recursion(TreeNode node, List<Integer> list, int k){
+        if(node==null) return;
 
-        if(count==k) return count;
-        count=recursion(node.left,list,count,k);
-        if(count==k) return count;
+        if(list.size()==k) return;
+        recursion(node.left,list,k);
+        if(list.size()==k) return;
         list.add(node.val);
-        count++;
-        if(count==k) return count;
-        count=recursion(node.right,list,count,k);
+        if(list.size()==k) return;
+        recursion(node.right,list,k);
 
-        return count;
+        return;
     }
 }
