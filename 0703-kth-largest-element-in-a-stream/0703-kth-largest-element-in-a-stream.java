@@ -4,17 +4,17 @@ class KthLargest {
 
     public KthLargest(int k, int[] nums) {
         this.k=k;
-        this.pq = new PriorityQueue<>();
+        pq = new PriorityQueue<>();
         for(int i=0;i<nums.length;i++) {
-            this.pq.add(nums[i]);
-            if(this.pq.size()>this.k) this.pq.remove();
+            pq.add(nums[i]);
+            if(pq.size()>k) pq.remove();
         }
     }
     
     public int add(int val) {
-        this.pq.add(val);
-        if(this.pq.size()>this.k)this.pq.remove();
-        return this.pq.peek();        
+        pq.add(val);
+        if(pq.size()>k)pq.remove();
+        return pq.peek();        
     }
 
 }
