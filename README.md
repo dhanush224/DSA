@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0907-koko-eating-bananas](https://github.com/dhanush224/DSA/tree/master/0907-koko-eating-bananas) |
 | [0930-binary-subarrays-with-sum](https://github.com/dhanush224/DSA/tree/master/0930-binary-subarrays-with-sum) |
 | [0943-sum-of-subarray-minimums](https://github.com/dhanush224/DSA/tree/master/0943-sum-of-subarray-minimums) |
+| [0973-k-closest-points-to-origin](https://github.com/dhanush224/DSA/tree/master/0973-k-closest-points-to-origin) |
 | [0992-subarrays-with-k-different-integers](https://github.com/dhanush224/DSA/tree/master/0992-subarrays-with-k-different-integers) |
 | [0994-rotting-oranges](https://github.com/dhanush224/DSA/tree/master/0994-rotting-oranges) |
 | [1004-max-consecutive-ones-iii](https://github.com/dhanush224/DSA/tree/master/1004-max-consecutive-ones-iii) |
@@ -116,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/dhanush224/DSA/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/dhanush224/DSA/tree/master/0268-missing-number) |
 | [0451-sort-characters-by-frequency](https://github.com/dhanush224/DSA/tree/master/0451-sort-characters-by-frequency) |
+| [0973-k-closest-points-to-origin](https://github.com/dhanush224/DSA/tree/master/0973-k-closest-points-to-origin) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/dhanush224/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 ## Two Pointers
 |  |
@@ -176,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/dhanush224/DSA/tree/master/0050-powx-n) |
 | [0189-rotate-array](https://github.com/dhanush224/DSA/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/dhanush224/DSA/tree/master/0268-missing-number) |
+| [0973-k-closest-points-to-origin](https://github.com/dhanush224/DSA/tree/master/0973-k-closest-points-to-origin) |
 | [1248-count-number-of-nice-subarrays](https://github.com/dhanush224/DSA/tree/master/1248-count-number-of-nice-subarrays) |
 | [2032-largest-odd-number-in-string](https://github.com/dhanush224/DSA/tree/master/2032-largest-odd-number-in-string) |
 | [2050-count-good-numbers](https://github.com/dhanush224/DSA/tree/master/2050-count-good-numbers) |
@@ -214,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0004-median-of-two-sorted-arrays](https://github.com/dhanush224/DSA/tree/master/0004-median-of-two-sorted-arrays) |
 | [0053-maximum-subarray](https://github.com/dhanush224/DSA/tree/master/0053-maximum-subarray) |
 | [0169-majority-element](https://github.com/dhanush224/DSA/tree/master/0169-majority-element) |
+| [0973-k-closest-points-to-origin](https://github.com/dhanush224/DSA/tree/master/0973-k-closest-points-to-origin) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -321,6 +325,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0451-sort-characters-by-frequency](https://github.com/dhanush224/DSA/tree/master/0451-sort-characters-by-frequency) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/dhanush224/DSA/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0973-k-closest-points-to-origin](https://github.com/dhanush224/DSA/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/dhanush224/DSA/tree/master/1046-last-stone-weight) |
 ## Bucket Sort
 |  |
@@ -528,4 +533,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0703-kth-largest-element-in-a-stream](https://github.com/dhanush224/DSA/tree/master/0703-kth-largest-element-in-a-stream) |
+## Geometry
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/dhanush224/DSA/tree/master/0973-k-closest-points-to-origin) |
+## Quickselect
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/dhanush224/DSA/tree/master/0973-k-closest-points-to-origin) |
+## K-D Tree
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/dhanush224/DSA/tree/master/0973-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
