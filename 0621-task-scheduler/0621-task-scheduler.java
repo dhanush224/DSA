@@ -1,39 +1,41 @@
 class Solution {
     public int leastInterval(char[] tasks, int n) {
-
-        HashMap<Integer,Integer> map = new HashMap<>();
-        for(char c: tasks){
-            if(!map.containsKey((int)c))
-                map.put((int)c,1);
-            else
-                map.put((int)c,map.get((int)c)+1);
+        Map<Character,Integer> frequency = new HashMap<>();
+        for(char c : tasks){
+            if(!frequency.containsKey(c)){
+                frequency.put(c,1);
+            }else{
+                frequency.put(c,1+frequency.get(c));
+            }
         }
 
         PriorityQueue<Integer> pq = new PriorityQueue<>();
-        for(int key: map.keySet()){
-            pq.add(-1*map.get(key));
+        for(int value: frequency.values()){
+            pq.add(-1*value);
         }
 
-        int time=0;
         Queue<int[]> q = new ArrayDeque<>();
 
+        int time=0;
         while(!pq.isEmpty()){
-            int task = 1+pq.remove();
+            int remainingFreq = 1+pq.remove();
             time++;
 
-            if(task!=0)q.add(new int[]{task,time+n});
-            if(!q.isEmpty()){
-                int[] arr = q.peek();
+            if(remainingFreq!=0) q.add(new int[]{remainingFreq,time+n});
 
-                while(pq.isEmpty() && time<arr[1])time++;
-
-                if(time>=arr[1]) {
-                    pq.add(arr[0]); 
-                    q.remove();
-                }
+            while(pq.isEmpty() && !q.isEmpty() && time<q.peek()[1]){
+                time++;
             }
 
+            while(!q.isEmpty() && time>=q.peek()[1]){
+                pq.add(q.peek()[0]);
+                q.remove();
+            }
+
+            
         }
+
         return time;
+
     }
 }
