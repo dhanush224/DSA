@@ -185,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0043-multiply-strings](https://github.com/dhanush224/DSA/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/dhanush224/DSA/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/dhanush224/DSA/tree/master/0050-powx-n) |
+| [0070-climbing-stairs](https://github.com/dhanush224/DSA/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/dhanush224/DSA/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/dhanush224/DSA/tree/master/0268-missing-number) |
 | [0973-k-closest-points-to-origin](https://github.com/dhanush224/DSA/tree/master/0973-k-closest-points-to-origin) |
@@ -234,6 +235,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/dhanush224/DSA/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/dhanush224/DSA/tree/master/0022-generate-parentheses) |
 | [0053-maximum-subarray](https://github.com/dhanush224/DSA/tree/master/0053-maximum-subarray) |
+| [0070-climbing-stairs](https://github.com/dhanush224/DSA/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/dhanush224/DSA/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/dhanush224/DSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/dhanush224/DSA/tree/master/0124-binary-tree-maximum-path-sum) |
@@ -576,4 +578,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0973-k-closest-points-to-origin](https://github.com/dhanush224/DSA/tree/master/0973-k-closest-points-to-origin) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/dhanush224/DSA/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
