@@ -3,22 +3,9 @@ class Solution {
 
         Map<Integer, Integer> map = new HashMap<>();
         for(int i=0;i<nums.length;i++){
+            if(map.containsKey(target-nums[i]) && i!=map.get(target-nums[i])) return new int[]{i,map.get(target-nums[i])};
             map.put(nums[i], i);
         }
-
-        int[] ret = new int[2];
-
-        for(int i=0;i<nums.length;i++){
-            if(map.containsKey(target-nums[i])){
-                int j=map.get(target-nums[i]);
-                if(i!=j){
-                    ret[0]=i;
-                    ret[1]=j;
-                    return ret;
-                }
-            }
-        } 
-
-        return ret;  
+        return new int[]{0,0};
     }
 }
