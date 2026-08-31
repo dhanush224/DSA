@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/dhanush224/DSA/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/dhanush224/DSA/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/dhanush224/DSA/tree/master/0268-missing-number) |
+| [0271-encode-and-decode-strings](https://github.com/dhanush224/DSA/tree/master/0271-encode-and-decode-strings) |
 | [0283-move-zeroes](https://github.com/dhanush224/DSA/tree/master/0283-move-zeroes) |
 | [0286-walls-and-gates](https://github.com/dhanush224/DSA/tree/master/0286-walls-and-gates) |
 | [0410-split-array-largest-sum](https://github.com/dhanush224/DSA/tree/master/0410-split-array-largest-sum) |
@@ -167,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0151-reverse-words-in-a-string](https://github.com/dhanush224/DSA/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/dhanush224/DSA/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/dhanush224/DSA/tree/master/0242-valid-anagram) |
+| [0271-encode-and-decode-strings](https://github.com/dhanush224/DSA/tree/master/0271-encode-and-decode-strings) |
 | [0402-remove-k-digits](https://github.com/dhanush224/DSA/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/dhanush224/DSA/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/dhanush224/DSA/tree/master/0451-sort-characters-by-frequency) |
@@ -557,6 +559,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0271-encode-and-decode-strings](https://github.com/dhanush224/DSA/tree/master/0271-encode-and-decode-strings) |
 | [0295-find-median-from-data-stream](https://github.com/dhanush224/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0355-design-twitter](https://github.com/dhanush224/DSA/tree/master/0355-design-twitter) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/dhanush224/DSA/tree/master/0703-kth-largest-element-in-a-stream) |
