@@ -6,17 +6,18 @@ class Solution {
 
         for(int i=0;i<9;i++){
             for(int j=0;j<9;j++){
+                if(board[i][j]=='.') continue;
                 String s = (char)i/3 +","+ (char)j/3;
                 Integer val = (int)board[i][j];
-                if(rowSet.computeIfAbsent(i,k ->new HashSet<>()).contains(val) || colSet.computeIfAbsent(j,k ->new HashSet<>()).contains(val) || boxes.computeIfAbsent(s,k ->new HashSet<>()).contains(val)) return false;
+                if( (rowSet.get(i)!=null && rowSet.get(i).contains(val)) || (colSet.get(j)!=null && colSet.get(j).contains(val)) || (boxes.get(s)!=null && boxes.get(s).contains(val)) ) return false;
 
-                if(board[i][j]!='.'){
-                    rowSet.get(i).add((int)board[i][j]);
-                    colSet.get(j).add((int)board[i][j]);
-                    boxes.get(s).add((int)board[i][j]);
-                }
+                if(rowSet.get(i)==null) rowSet.put(i,new HashSet<>());
+                colSet.putIfAbsent(j, new HashSet<>());
+                boxes.putIfAbsent(s, new HashSet<>());
+                rowSet.get(i).add(val);
+                colSet.get(j).add(val);
+                boxes.get(s).add(val);
                 
-
             }
         }        
 
