@@ -518,6 +518,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Union-Find
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/dhanush224/DSA/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/dhanush224/DSA/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
 | [0261-graph-valid-tree](https://github.com/dhanush224/DSA/tree/master/0261-graph-valid-tree) |
