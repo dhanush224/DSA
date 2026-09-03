@@ -1,35 +1,21 @@
 class Solution {
     public boolean isPalindrome(String s) {
-        s=s.toLowerCase();
-        int l=0, r=s.length()-1;
-        while(l<=r){
-            if(isAlphaNumeric1(s.charAt(l))){
-                if(isAlphaNumeric1(s.charAt(r)) ){
-                    if((int)s.charAt(l)==(int)s.charAt(r) ){
-                        l++;
-                        r--;
-                    }else{
-                        return false;
-                    }
+        String t = s.toLowerCase();
+        StringBuilder sb = new StringBuilder();
+        for(int i=0;i<t.length();i++){
+            if((t.charAt(i)>='a' && t.charAt(i)<='z') || (t.charAt(i)>='0'&&t.charAt(i)<='9')) sb.append(t.charAt(i));
+        }
 
-                }else{
-                    r--;
-                }
-
-            }else{
-                l++;
+        t= sb.toString();
+        int j=t.length()-1;
+        for(int i=0;i<t.length();i++){
+            if(t.charAt(i)!=(t.charAt(j))){
+                return false;
             }
+            j--;
+            if(i>j) break;
         }
+
         return true;
-        
-    }
-
-    public boolean isAlphaNumeric1(Character c){
-        if(((int)c>=48 && (int)c<=57) || ( (int)c>=65 && (int)c<=90 ) || ((int)c>=97 && (int)c<=122) ){
-            return true;
-        }else{
-            return false;
-        }
-
     }
 }
