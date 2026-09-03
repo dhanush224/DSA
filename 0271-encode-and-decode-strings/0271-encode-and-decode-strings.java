@@ -1,42 +1,39 @@
 public class Codec {
 
     // Encodes a list of strings to a single string.
-    public String encode(List<String> strs) {
+    public String encode(List<String> strs) { 
         StringBuilder sb = new StringBuilder();
-        for(String str: strs){            
+        for(String str: strs){
             sb.append(str.length());
             sb.append("#");
             sb.append(str);
-        }
+        }       
         return sb.toString();
-        
     }
+
 
     // Decodes a single string to a list of strings.
     public List<String> decode(String s) {
-        List<String> ret = new ArrayList<>();
         int j=0;
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)=='#'){
-                int length=s.charAt(j)-'0';
-                int l = i-j-1;
-                for(int z=0;z<l;z++){
-                    length*=10;
-                    j++;
-                    length+=s.charAt(j)-'0';
+        int i=0;
+        List<String> list = new ArrayList<>();
+        while(j<s.length()){
+            if(s.charAt(j)=='#'){
+                int length=0;
+                while(i<j){
+                    length=length*10+ s.charAt(i)-'0';
+                    i++;        
                 }
-                if(length==0){
-                    ret.add("");
-                    j=i+1;
-                    continue;
-                }
-                ret.add(s.substring(i+1,i+length+1));
-                i=i+length;
-                j=i+1;                
-            }
+                if(length==0)list.add("");
+                else list.add(s.substring(j+1,j+length+1));
+                j=j+length+1;
+                i=j;
+            }else j++;
         }
-        return ret;     
+
+        return list;
     }
+
 }
 
 // Your Codec object will be instantiated and called as such:
