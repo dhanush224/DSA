@@ -8,21 +8,15 @@ class Solution {
             map.put(nums[i], map.getOrDefault(nums[i],0)+1);
         } 
 
-        int j=0;
-        for(int key:map.keySet()){
-            arr[j][0]=key;
-            arr[j][1]=map.get(key);
-            j++;
-        }
-
         PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->Integer.compare(a[1],b[1]));
 
-        for(int i=0;i<j;i++){
-            pq.add(arr[i]);
+        for(int key:map.keySet()){
+            pq.add(new int[]{key,map.get(key)});
             if(pq.size()>k){
                 pq.remove();
             }
         }
+
 
         int[] ret = new int[k];
         for(int i=0;i<k;i++){
