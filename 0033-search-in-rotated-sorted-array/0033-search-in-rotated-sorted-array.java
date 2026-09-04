@@ -11,7 +11,6 @@ class Solution {
             }else if(nums[low]<=nums[mid])low=mid+1;
             else high=mid-1;
         }
-System.out.println(least);
         low=0;
         high=nums.length-1;
             if(nums[least]<=target && target<=nums[high]){
