@@ -1,34 +1,25 @@
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        
-        List<List<Integer>> outerList = new ArrayList<>();
-        List<Integer> list = new ArrayList<>();
-        recursion(0,candidates.length,0,candidates,target,outerList,list);
-        return outerList;
+        List<List<Integer>> list = new ArrayList<>();
+        List<Integer> innerList = new ArrayList<>();
+        recursion(list, innerList, candidates, 0, target, 0);
+
+        return list;  
     }
 
-    public void recursion(int i, int size, int sum, int[] candidates, int target, List<List<Integer>> outerList, List<Integer> list) {
-        if(sum>target){
-            return;            
-        }else if(sum==target){
-            outerList.add(new ArrayList<>(list));
+    public void recursion(List<List<Integer>> list, List<Integer> innerList, int[] candidates, int i, int target, int sum){
+
+        if(sum>target || i==candidates.length) return;
+        if(sum==target){
+            list.add(new ArrayList<>(innerList));
             return;
         }
+        
+        innerList.add(candidates[i]);
+        recursion(list, innerList, candidates, i, target, sum+candidates[i]);
+        innerList.remove(innerList.size()-1);
+        recursion(list,innerList,candidates,i+1,target, sum);
 
-        if(i==size){
-            if(sum==target){
-                outerList.add(new ArrayList<>(list));
-                return;
-            }else return;
-        }
-
-        list.add(candidates[i]);
-        sum+=candidates[i];
-        recursion(i,size,sum,candidates,target,outerList, list);
-
-        list.remove(list.size()-1);
-        sum-=candidates[i];
-        recursion(i+1,size,sum,candidates,target,outerList, list);
-        return;        
+        return;
     }
 }
