@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/dhanush224/DSA/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/dhanush224/DSA/tree/master/0040-combination-sum-ii) |
 | [0048-rotate-image](https://github.com/dhanush224/DSA/tree/master/0048-rotate-image) |
+| [0049-group-anagrams](https://github.com/dhanush224/DSA/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/dhanush224/DSA/tree/master/0053-maximum-subarray) |
 | [0073-set-matrix-zeroes](https://github.com/dhanush224/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/dhanush224/DSA/tree/master/0074-search-a-2d-matrix) |
@@ -93,6 +94,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0012-integer-to-roman](https://github.com/dhanush224/DSA/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/dhanush224/DSA/tree/master/0013-roman-to-integer) |
 | [0036-valid-sudoku](https://github.com/dhanush224/DSA/tree/master/0036-valid-sudoku) |
+| [0049-group-anagrams](https://github.com/dhanush224/DSA/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/dhanush224/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/dhanush224/DSA/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/dhanush224/DSA/tree/master/0133-clone-graph) |
@@ -123,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/dhanush224/DSA/tree/master/0015-3sum) |
+| [0049-group-anagrams](https://github.com/dhanush224/DSA/tree/master/0049-group-anagrams) |
 | [0075-sort-colors](https://github.com/dhanush224/DSA/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/dhanush224/DSA/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/dhanush224/DSA/tree/master/0215-kth-largest-element-in-an-array) |
@@ -172,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/dhanush224/DSA/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/dhanush224/DSA/tree/master/0022-generate-parentheses) |
 | [0043-multiply-strings](https://github.com/dhanush224/DSA/tree/master/0043-multiply-strings) |
+| [0049-group-anagrams](https://github.com/dhanush224/DSA/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/dhanush224/DSA/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/dhanush224/DSA/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/dhanush224/DSA/tree/master/0205-isomorphic-strings) |
