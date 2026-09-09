@@ -14,8 +14,8 @@ class Solution {
 
         es.add(nums[i]);
         recursion(list,es,nums,i+1);
-        es.remove(es.size()-1);
         while(i+1<nums.length && nums[i]==nums[i+1]) i++;
+        es.remove(es.size()-1);
         recursion(list,es,nums,i+1);
 
     }
