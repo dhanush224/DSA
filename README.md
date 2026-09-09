@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0451-sort-characters-by-frequency](https://github.com/dhanush224/DSA/tree/master/0451-sort-characters-by-frequency) |
 | [0496-next-greater-element-i](https://github.com/dhanush224/DSA/tree/master/0496-next-greater-element-i) |
 | [0560-subarray-sum-equals-k](https://github.com/dhanush224/DSA/tree/master/0560-subarray-sum-equals-k) |
+| [0567-permutation-in-string](https://github.com/dhanush224/DSA/tree/master/0567-permutation-in-string) |
 | [0621-task-scheduler](https://github.com/dhanush224/DSA/tree/master/0621-task-scheduler) |
 | [0930-binary-subarrays-with-sum](https://github.com/dhanush224/DSA/tree/master/0930-binary-subarrays-with-sum) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/dhanush224/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
@@ -162,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/dhanush224/DSA/tree/master/0234-palindrome-linked-list) |
 | [0283-move-zeroes](https://github.com/dhanush224/DSA/tree/master/0283-move-zeroes) |
 | [0295-find-median-from-data-stream](https://github.com/dhanush224/DSA/tree/master/0295-find-median-from-data-stream) |
+| [0567-permutation-in-string](https://github.com/dhanush224/DSA/tree/master/0567-permutation-in-string) |
 | [0908-middle-of-the-linked-list](https://github.com/dhanush224/DSA/tree/master/0908-middle-of-the-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/dhanush224/DSA/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/dhanush224/DSA/tree/master/2271-rearrange-array-elements-by-sign) |
@@ -187,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0402-remove-k-digits](https://github.com/dhanush224/DSA/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/dhanush224/DSA/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/dhanush224/DSA/tree/master/0451-sort-characters-by-frequency) |
+| [0567-permutation-in-string](https://github.com/dhanush224/DSA/tree/master/0567-permutation-in-string) |
 | [0812-rotate-string](https://github.com/dhanush224/DSA/tree/master/0812-rotate-string) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/dhanush224/DSA/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/dhanush224/DSA/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
@@ -329,6 +332,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/dhanush224/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/dhanush224/DSA/tree/master/0424-longest-repeating-character-replacement) |
+| [0567-permutation-in-string](https://github.com/dhanush224/DSA/tree/master/0567-permutation-in-string) |
 | [0930-binary-subarrays-with-sum](https://github.com/dhanush224/DSA/tree/master/0930-binary-subarrays-with-sum) |
 | [0992-subarrays-with-k-different-integers](https://github.com/dhanush224/DSA/tree/master/0992-subarrays-with-k-different-integers) |
 | [1004-max-consecutive-ones-iii](https://github.com/dhanush224/DSA/tree/master/1004-max-consecutive-ones-iii) |
