@@ -1,39 +1,29 @@
 class Solution {
-    List<String> list = new ArrayList<>();
     public List<String> generateParenthesis(int n) {
-
-        StringBuilder sb = new StringBuilder();
-        return recursion(n, sb, 0, 0, 0);
-
-    }
-
-    public List<String> recursion(int n, StringBuilder sb, int positivity, int i, int left){
-        
-        if(i==2*n){
-            list.add(sb.toString());
-            return list;
-        }
-
-        if(positivity==0){
-            sb.append('(');
-            recursion(n,sb,positivity+1,i+1,left+1);
-            sb.deleteCharAt(i);
-        }else{
-            if(left<n){
-                sb.append('(');
-                recursion(n,sb,positivity+1,i+1,left+1);
-                sb.deleteCharAt(i);
-                sb.append(')');
-                recursion(n,sb,positivity-1,i+1,left);
-                sb.deleteCharAt(i);
-            }else{
-                sb.append(')');
-                recursion(n,sb,positivity-1,i+1,left);
-                sb.deleteCharAt(i);
-            }
-        }
+        List<String> list = new ArrayList<>();
+        recursion(list, new StringBuilder(), n, 0,0);
 
         return list;
+    }
+
+    public void recursion(List<String> list, StringBuilder sb, int n, int open, int close){
+        if(close==n){
+            list.add(sb.toString());
+            return;
+        }
+
+        if(open<n){
+            sb.append('(');
+            recursion(list, sb,n,open+1,close);
+            sb.deleteCharAt(sb.length()-1);
+        }
+
+        if(close<open){
+            sb.append(')');
+            recursion(list,sb,n,open,close+1);
+            sb.deleteCharAt(sb.length()-1);
+        }
+
     }
 
 }
