@@ -1,38 +1,24 @@
 class MinStack {
-    private List<Integer> list = new ArrayList<>();
-    int min = Integer.MAX_VALUE;
-    int idx=0;
-    int index=0;
-    private Map<Integer,Integer> map = new HashMap<>();
+    private Stack<int[]> st = new Stack<>();
 
     public MinStack() {
     }
     
     public void push(int value) {
-        map.put(idx,value);
-        idx++;
-        min=Math.min(min,value);
-        list.add(index,min);
-        index++;
-
+        if(st.isEmpty()) st.push(new int[]{value,value});
+        else st.push(new int[]{value,Math.min(value,st.peek()[1]) });
     }
     
     public void pop() {
-        map.remove(idx-1);  
-        idx--;    
-        index--;
-        if(index==0) min = Integer.MAX_VALUE;
-        else if(list.get(index)==min){
-            min=list.get(index-1);
-        }
+        st.pop();
     }
     
     public int top() {
-        return map.get(idx-1);       
+        return st.peek()[0];
     }
     
     public int getMin() {
-        return list.get(index-1);
+        return st.peek()[1];
     }
 }
 
