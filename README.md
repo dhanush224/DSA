@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/dhanush224/DSA/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/dhanush224/DSA/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/dhanush224/DSA/tree/master/0200-number-of-islands) |
+| [0213-house-robber-ii](https://github.com/dhanush224/DSA/tree/master/0213-house-robber-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/dhanush224/DSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0216-combination-sum-iii](https://github.com/dhanush224/DSA/tree/master/0216-combination-sum-iii) |
 | [0217-contains-duplicate](https://github.com/dhanush224/DSA/tree/master/0217-contains-duplicate) |
@@ -268,6 +269,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0124-binary-tree-maximum-path-sum](https://github.com/dhanush224/DSA/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0152-maximum-product-subarray](https://github.com/dhanush224/DSA/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/dhanush224/DSA/tree/master/0198-house-robber) |
+| [0213-house-robber-ii](https://github.com/dhanush224/DSA/tree/master/0213-house-robber-ii) |
 | [0410-split-array-largest-sum](https://github.com/dhanush224/DSA/tree/master/0410-split-array-largest-sum) |
 | [0542-01-matrix](https://github.com/dhanush224/DSA/tree/master/0542-01-matrix) |
 | [0943-sum-of-subarray-minimums](https://github.com/dhanush224/DSA/tree/master/0943-sum-of-subarray-minimums) |
