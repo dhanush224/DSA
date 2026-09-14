@@ -15,15 +15,15 @@
  */
 class Solution {
     public boolean isValidBST(TreeNode root) {
+        if(root==null) return true;
 
         return recursion(root,Long.MIN_VALUE,Long.MAX_VALUE);
-                
     }
 
-    public boolean recursion(TreeNode node, long min, long max){
-        if(node==null) return true;
-        if(min>=node.val || max<=node.val) return false;
+    public boolean recursion(TreeNode root, long min, long max){
+        if(root==null) return true;
+        if(root.val<=min || root.val>=max) return false;
 
-        return recursion(node.left,min,node.val) && recursion(node.right,node.val,max);
+        return (recursion(root.left,min,root.val) && recursion(root.right,root.val,max));
     }
 }
