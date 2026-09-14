@@ -23,11 +23,10 @@ class Solution {
 
         while(!q.isEmpty()){
             int n = q.size();
-            int m=n;
             for(int i=0;i<n;i++){
-                if(m==1) list.add(q.peek().val);
                 TreeNode node = q.remove();
-                m--;
+                if(i==n-1) list.add(node.val);
+
                 if(node.left!=null) q.add(node.left);
                 if(node.right!=null) q.add(node.right);
             }
