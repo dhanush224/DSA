@@ -23,10 +23,10 @@ class Solution {
     }
 
     public int recursion(TreeNode node, int depth, int maxDepth){
-        if(node==null) return depth-1;
+        if(node==null) return 0;
 
-        int left = recursion(node.left, depth+1, Math.max(depth+1,maxDepth));
-        int right = recursion(node.right, depth+1, Math.max(depth+1,maxDepth));
+        int left = 1+recursion(node.left, depth+1, Math.max(depth+1,maxDepth));
+        int right = 1+recursion(node.right, depth+1, Math.max(depth+1,maxDepth));
         int diff = 0;
         if(left>right) diff = left-right;
         else diff = right-left;
