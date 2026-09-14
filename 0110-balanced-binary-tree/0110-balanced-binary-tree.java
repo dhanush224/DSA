@@ -17,16 +17,16 @@ class Solution {
     public boolean isBalanced(TreeNode root) {
         if(root==null) return true;
 
-        if(recursion(root,0,0)>=0) return true;
+        if(recursion(root)>=0) return true;
         else return false;
 
     }
 
-    public int recursion(TreeNode node, int depth, int maxDepth){
+    public int recursion(TreeNode node){
         if(node==null) return 0;
 
-        int left = 1+recursion(node.left, depth+1, Math.max(depth+1,maxDepth));
-        int right = 1+recursion(node.right, depth+1, Math.max(depth+1,maxDepth));
+        int left = 1+recursion(node.left);
+        int right = 1+recursion(node.right);
         int diff = 0;
         if(left>right) diff = left-right;
         else diff = right-left;
