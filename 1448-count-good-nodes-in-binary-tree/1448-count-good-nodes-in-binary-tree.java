@@ -14,20 +14,23 @@
  * }
  */
 class Solution {
-    int count=1;
     public int goodNodes(TreeNode root) {
 
-        if(root.left!=null) {
-            if(root.left.val>=root.val)count++;
-            else root.left.val=root.val;
-            goodNodes(root.left);
+        return recursion(root,root.val,0);
+
+    }
+
+    public int recursion(TreeNode node, int max, int count){
+        if(node==null) return count;
+
+        if(node.val>=max) {
+            count++;
+            max=node.val;
         }
-        if(root.right!=null){
-            if(root.right.val>=root.val)count++;
-            else root.right.val=root.val;
-            goodNodes(root.right);
-        }
+        if(node.left!=null)count=recursion(node.left,max,count);
+        if(node.right!=null)count=recursion(node.right,max,count);
 
         return count;
+
     }
 }
