@@ -15,7 +15,7 @@ class Solution {
                     if(val>max) max=val;
                 }
             }
-            dp[i]=Math.max(max+nums[i],nums[i]);
+            dp[i]=max+nums[i];
         }
 
         return Math.max(dp[n-1],dp[n-2]);
