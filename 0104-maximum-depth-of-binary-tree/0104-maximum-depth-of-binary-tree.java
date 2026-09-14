@@ -18,18 +18,17 @@ class Solution {
 
         if(root==null) return 0;
 
-        return recursion(root,1,1);        
+        return recursion(root);        
     }
 
-    public int recursion(TreeNode node, int depth, int maxDepth){
+    public int recursion(TreeNode node){
 
-        if(node==null) return maxDepth-1;
+        if(node==null) return 0;
 
-        int left = recursion(node.left,depth+1,Math.max(maxDepth,depth+1));
-        int right = recursion(node.right,depth+1,Math.max(maxDepth,depth+1));
-        maxDepth= Math.max(left,right);
+        int left = 1+recursion(node.left);
+        int right = 1+recursion(node.right);
 
-        return maxDepth;
+        return Math.max(left,right);
 
     }
 
