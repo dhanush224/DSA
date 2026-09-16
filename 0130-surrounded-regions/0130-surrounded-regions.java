@@ -5,32 +5,20 @@ class Solution {
 
         int[][] vis = new int[m][n];
         Queue<int[]> q = new LinkedList<>();
-        for(int j=0;j<n;j++) {
-        if(board[0][j]=='O' && vis[0][j]!=1) {
-            q.offer(new int[]{0,j});
-            vis[0][j]=1;
-        }}
-        for(int j=0;j<n;j++) {
-            if(board[m-1][j]=='O' && vis[m-1][j]!=1) {
-            q.offer(new int[]{m-1,j});
-            vis[m-1][j]=1;
-        }}
-        for(int i=0;i<m;i++){
-            if(board[i][0]=='O' && vis[i][0]!=1){
-                q.offer(new int[]{i,0});
-                vis[i][0]=1;
-            }
-        }
-        for(int i=0;i<m;i++){
-            if(board[i][n-1]=='O' && vis[i][n-1]!=1){
-                q.offer(new int[]{i,n-1});
-                vis[i][0]=1;
-            }
-        }
 
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(((i==0 || i==m-1) || (j==0 || j==n-1)) && vis[i][j]!=1 && board[i][j]=='O'){
+                    vis[i][j]=1;
+                    q.offer(new int[]{i,j});
+                }
+            }
+        }
+            System.out.println(q.size());
         int[][] dirs = new int[][]{{1,0},{-1,0},{0,1},{0,-1}};
         while(!q.isEmpty()){
             int size = q.size();
+
             for(int i=0;i<size;i++){
                 int[] curr = q.poll();
 
@@ -48,7 +36,7 @@ class Solution {
 
         for(int i=1;i<m-1;i++){
             for(int j=1;j<n-1;j++){
-                if(vis[i][j]!=1) board[i][j]='X';
+                if(vis[i][j]!=1 && board[i][j]=='O') board[i][j]='X';
             }
         }
 
