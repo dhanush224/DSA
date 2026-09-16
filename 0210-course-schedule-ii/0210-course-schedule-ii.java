@@ -7,8 +7,8 @@ class Solution {
         List<List<Integer>> list = new ArrayList<>();
         for(int i=0;i<numCourses;i++) list.add(new ArrayList<>());
         for(int[] pair: prerequisites) {
-            indegree[pair[1]]++;
-            list.get(pair[0]).add(pair[1]);
+            indegree[pair[0]]++;
+            list.get(pair[1]).add(pair[0]);
         }
 
 
@@ -31,7 +31,7 @@ class Solution {
 
         if(ret.size()<numCourses) return new int[]{};
         else {
-            for(int i=0;i<numCourses;i++) order[i]=ret.get(numCourses-i-1);
+            for(int i=0;i<numCourses;i++) order[i]=ret.get(i);
             return order;
         }
     }
