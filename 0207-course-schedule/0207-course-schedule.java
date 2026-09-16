@@ -11,10 +11,7 @@ class Solution {
         int[] path = new int[numCourses];
         for(int i=0;i<numCourses;i++){
             if(vis[i]!=1){
-                vis[i]=1;
-                path[i]=1;
                 if(!recursion(i,list,vis,path)) return false;
-                path[i]=0;
             }
             
         }
@@ -23,17 +20,15 @@ class Solution {
 
     public boolean recursion(int node,List<List<Integer>> list, int[] vis, int[] path){
 
-
+        vis[node]=1;
+        path[node]=1;
         for(int nei: list.get(node)){
             if(path[nei]==1) return false;
             if(vis[nei]!=1 ){
-            vis[nei]=1;
-            path[nei]=1;
-            boolean b = recursion(nei,list,vis,path);
-            if(b==false) return false;
-            path[nei]=0;
+                if(!recursion(nei,list,vis,path)) return false;;
             }
         }
+        path[node]=0;
         return true;
     }
 }
