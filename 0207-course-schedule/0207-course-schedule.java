@@ -1,56 +1,39 @@
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
+        List<List<Integer>> list = new ArrayList<>();
+        for(int i=0;i<numCourses;i++) list.add(new ArrayList<>());
+
+        for(int[] courses: prerequisites){
+            list.get(courses[0]).add(courses[1]);
+        }
+
         int[] vis = new int[numCourses];
-        int[] studied = new int[numCourses];
-        int m = prerequisites.length;
-        int n = 2;
-        Map<Integer, List<Integer>> map = new HashMap<>();
-        for(int i=0;i<m;i++){
-            if(map.containsKey(prerequisites[i][0])){
-                List<Integer> list = map.get(prerequisites[i][0]);
-                list.add(prerequisites[i][1]);
-                map.put(prerequisites[i][0],list);
-            }else{
-                List<Integer> list = new ArrayList<>();
-                list.add(prerequisites[i][1]);
-                map.put(prerequisites[i][0],list);
-            } 
-        }
-
-        System.out.println(map);
-
-        boolean b = true;
+        int[] path = new int[numCourses];
         for(int i=0;i<numCourses;i++){
-            b=b&&recursion(i,map,vis,studied);
-            if(b==false) break;
+            if(vis[i]!=1){
+                vis[i]=1;
+                path[i]=1;
+                if(!recursion(i,list,vis,path)) return false;
+                path[i]=0;
+            }
+            
         }
-
-        return b;
-
+        return true;
     }
 
-    public boolean recursion(int node, Map<Integer, List<Integer>> map, int[] vis, int[] studied){
-        
-        if(vis[node]==1 && studied[node]!=1)return false;
-        else if(vis[node]==1 && studied[node]==1) return true;
+    public boolean recursion(int node,List<List<Integer>> list, int[] vis, int[] path){
 
-        vis[node]=1;
-        boolean b = true;
 
-        if(!map.containsKey(node)){
-            studied[node]=1;
-            return true;
+        for(int nei: list.get(node)){
+            if(path[nei]==1) return false;
+            if(vis[nei]!=1 ){
+            vis[nei]=1;
+            path[nei]=1;
+            boolean b = recursion(nei,list,vis,path);
+            if(b==false) return false;
+            path[nei]=0;
+            }
         }
-
-        for(int nei: map.get(node)){
-            b = b && recursion(nei,map,vis,studied);
-            if(b==false) break;
-        }
-
-        if(b==true)studied[node]=1;
-        return b;
+        return true;
     }
-
-
-    
 }
