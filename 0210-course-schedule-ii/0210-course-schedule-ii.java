@@ -1,62 +1,44 @@
 class Solution {
+    int index=0;
     public int[] findOrder(int numCourses, int[][] prerequisites) {
-        
+
         int[] vis = new int[numCourses];
-        int[] studied = new int[numCourses];
-        int m = prerequisites.length;
-        int n = 2;
-        Map<Integer, List<Integer>> map = new HashMap<>();
-        for(int i=0;i<m;i++){
-            if(map.containsKey(prerequisites[i][0])){
-                List<Integer> list = map.get(prerequisites[i][0]);
-                list.add(prerequisites[i][1]);
-                map.put(prerequisites[i][0],list);
-            }else{
-                List<Integer> list = new ArrayList<>();
-                list.add(prerequisites[i][1]);
-                map.put(prerequisites[i][0],list);
-            } 
+        int[] path = new int[numCourses];
+        int[] order = new int[numCourses];
+
+        List<List<Integer>> list = new ArrayList<>();
+        for(int i=0;i<numCourses;i++) list.add(new ArrayList<>());
+
+        for(int[] pair: prerequisites){
+            list.get(pair[0]).add(pair[1]);
         }
 
-        int[] ret = new int[numCourses];
-        int[] index=new int[]{0};
-        boolean b = true;
         for(int i=0;i<numCourses;i++){
-            b=b&&recursion(i,map,vis,studied,ret,index);
-            if(b==false) break;
+            if(vis[i]!=1){
+                if(!recursion(i,list,vis,path,order)) return new int[]{};
+            }
         }
 
-        if(b==true) return ret;
-        else return new int[]{};
-
+        return order;
+        
     }
 
-    public boolean recursion(int node, Map<Integer, List<Integer>> map, int[] vis, int[] studied, int[] ret, int[] index){
-        
-        if(vis[node]==1 && studied[node]!=1)return false;
-        else if(vis[node]==1 && studied[node]==1) return true;
+    public boolean recursion(int node, List<List<Integer>> list, int[] vis, int[] path, int[] order){
 
         vis[node]=1;
-        boolean b = true;
+        path[node]=1;
 
-        if(!map.containsKey(node)){
-            studied[node]=1;
-            ret[index[0]]=node;
-            index[0]++;
-            return true;
+        for(int nei: list.get(node)){
+            if(path[nei]==1) return false;
+            if(vis[nei]!=1){
+                if(!recursion(nei,list,vis,path,order)) return false;
+            }
         }
 
-        for(int nei: map.get(node)){
-            b = b && recursion(nei,map,vis,studied,ret,index);
-            if(b==false) break;
-        }
+        path[node]=0;
+        order[index++]=node;
 
-        if(b==true){
-            studied[node]=1;
-            ret[index[0]]=node;
-            index[0]++;
-        }    
-        return b;
+
+        return true;
     }
-
 }
