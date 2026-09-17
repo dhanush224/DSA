@@ -2,38 +2,42 @@ class Solution {
     int index=0;
     public int[] findOrder(int numCourses, int[][] prerequisites) {
 
-        int[] indegree = new int[numCourses];
+        List<Integer> ret = new ArrayList<>();
+        List<List<Integer>> adjList = new ArrayList<>();
+        for(int i=0;i<numCourses;i++) adjList.add(new ArrayList<>());
 
-        List<List<Integer>> list = new ArrayList<>();
-        for(int i=0;i<numCourses;i++) list.add(new ArrayList<>());
-        for(int[] pair: prerequisites) {
-            indegree[pair[1]]++;
-            list.get(pair[0]).add(pair[1]);
-        }
+        for(int[] pair: prerequisites)adjList.get(pair[1]).add(pair[0]);
 
-
-        Queue<Integer> q = new ArrayDeque<>();
+        int[] vis = new int[numCourses];
         for(int i=0;i<numCourses;i++){
-            if(indegree[i]==0) q.offer(i);
+            if(vis[i]!=1){
+                if(!recursion(i, adjList,vis,ret)) return new int[]{};
+            }
         }
 
         int[] order = new int[numCourses];
-        List<Integer> ret = new ArrayList<>();
-        while(!q.isEmpty()){
-            int course = q.poll();
-            ret.add(course);
-            for(int nei: list.get(course)){
-                if(--indegree[nei]==0)q.offer(nei);
-            }
 
-        }
-
-
-        if(ret.size()<numCourses) return new int[]{};
-        else {
-            for(int i=0;i<numCourses;i++) order[i]=ret.get(numCourses-i-1);
-            return order;
-        }
+        for(int i=0;i<numCourses;i++) order[i]=ret.get(numCourses-i-1);
+        return order;
+    
     }
+
+    public boolean recursion(int i, List<List<Integer>> adjList, int[] vis, List<Integer> ret){
+
+        vis[i]=2;
+
+        for(int nei: adjList.get(i)){
+            if(vis[nei]==2) return false;
+            if(vis[nei]==0){
+                if(!recursion(nei,adjList,vis,ret)) return false;
+            }
+        }
+
+        vis[i]=1;
+        ret.add(i);
+        return true;
+    }
+
+
 
 }
