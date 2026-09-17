@@ -1,12 +1,11 @@
 class Solution {
-    int index=0;
     public int[] findOrder(int numCourses, int[][] prerequisites) {
 
         List<Integer> ret = new ArrayList<>();
         List<List<Integer>> adjList = new ArrayList<>();
         for(int i=0;i<numCourses;i++) adjList.add(new ArrayList<>());
 
-        for(int[] pair: prerequisites)adjList.get(pair[1]).add(pair[0]);
+        for(int[] pair: prerequisites)adjList.get(pair[0]).add(pair[1]);
 
         int[] vis = new int[numCourses];
         for(int i=0;i<numCourses;i++){
@@ -17,7 +16,7 @@ class Solution {
 
         int[] order = new int[numCourses];
 
-        for(int i=0;i<numCourses;i++) order[i]=ret.get(numCourses-i-1);
+        for(int i=0;i<numCourses;i++) order[i]=ret.get(i);
         return order;
     
     }
