@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0271-encode-and-decode-strings](https://github.com/dhanush224/DSA/tree/master/0271-encode-and-decode-strings) |
 | [0283-move-zeroes](https://github.com/dhanush224/DSA/tree/master/0283-move-zeroes) |
 | [0286-walls-and-gates](https://github.com/dhanush224/DSA/tree/master/0286-walls-and-gates) |
+| [0322-coin-change](https://github.com/dhanush224/DSA/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/dhanush224/DSA/tree/master/0347-top-k-frequent-elements) |
 | [0410-split-array-largest-sum](https://github.com/dhanush224/DSA/tree/master/0410-split-array-largest-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/dhanush224/DSA/tree/master/0417-pacific-atlantic-water-flow) |
@@ -271,6 +272,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0152-maximum-product-subarray](https://github.com/dhanush224/DSA/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/dhanush224/DSA/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/dhanush224/DSA/tree/master/0213-house-robber-ii) |
+| [0322-coin-change](https://github.com/dhanush224/DSA/tree/master/0322-coin-change) |
 | [0410-split-array-largest-sum](https://github.com/dhanush224/DSA/tree/master/0410-split-array-largest-sum) |
 | [0542-01-matrix](https://github.com/dhanush224/DSA/tree/master/0542-01-matrix) |
 | [0746-min-cost-climbing-stairs](https://github.com/dhanush224/DSA/tree/master/0746-min-cost-climbing-stairs) |
@@ -535,6 +537,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/dhanush224/DSA/tree/master/0226-invert-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/dhanush224/DSA/tree/master/0261-graph-valid-tree) |
 | [0286-walls-and-gates](https://github.com/dhanush224/DSA/tree/master/0286-walls-and-gates) |
+| [0322-coin-change](https://github.com/dhanush224/DSA/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/dhanush224/DSA/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0417-pacific-atlantic-water-flow](https://github.com/dhanush224/DSA/tree/master/0417-pacific-atlantic-water-flow) |
 | [0542-01-matrix](https://github.com/dhanush224/DSA/tree/master/0542-01-matrix) |
@@ -635,4 +638,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/dhanush224/DSA/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/dhanush224/DSA/tree/master/0022-generate-parentheses) |
+## Knapsack Problem
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/dhanush224/DSA/tree/master/0322-coin-change) |
+## Complete Knapsack
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/dhanush224/DSA/tree/master/0322-coin-change) |
 <!---LeetCode Topics End-->
