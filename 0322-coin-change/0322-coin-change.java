@@ -17,17 +17,14 @@ class Solution {
             else return Integer.MAX_VALUE;
         }
         
-
-        long nottake = Integer.MAX_VALUE;
-        if(i>0){
-            if(dp[i-1][amount]!=0) nottake = dp[i-1][amount];
-            else nottake = dfs(i-1,coins,amount,dp);
-        }
+        if(dp[i][amount]!=0) return dp[i][amount];
+        long nottake = Integer.MAX_VALUE;    
+        nottake = dfs(i-1,coins,amount,dp);
+        
 
         long take = Integer.MAX_VALUE;
         if(coins[i]<=amount) {
-            if(dp[i][amount-coins[i]]!=0) take = 1+dp[i][amount-coins[i]];
-            else take = 1+ dfs(i,coins,amount-coins[i],dp);
+            take = 1+ dfs(i,coins,amount-coins[i],dp);
         }
 
         dp[i][amount]=Math.min(nottake,take);
