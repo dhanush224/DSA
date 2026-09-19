@@ -5,20 +5,21 @@ class Solution {
         for(String str: strs){
             int[] arr = new int[26];
             for(int i=0;i<str.length();i++){
-                arr[str.charAt(i)-'a']++;
+                arr[str.charAt(i)-'a']++; // important
             }
-            String s = Arrays.toString(arr);
+            String s = Arrays.toString(arr); // important
             List<String> list = new ArrayList<>();
             if(map.containsKey(s)) list = map.get(s);
             list.add(str);
             map.put(s,list);
         }  
 
-        List<List<String>> ret = new ArrayList<>();
-        for(String key: map.keySet()){
-            ret.add(map.get(key));
-        }    
+        // List<List<String>> ret = new ArrayList<>();
+        // for(String key: map.keySet()){
+        //     ret.add(map.get(key));
+        // }    
 
-        return ret;
+        // return ret; 
+        return new ArrayList<>(map.values());
     }
 }
