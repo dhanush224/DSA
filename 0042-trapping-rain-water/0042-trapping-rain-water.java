@@ -10,13 +10,11 @@ class Solution {
             if(height[i]<height[j]){
                 i++;
                 if(height[i]>leftMax) leftMax=height[i];
-                int sum =Math.min(leftMax,rightMax)-height[i];
-                if(sum>0) rain+=sum;
+                rain+=leftMax-height[i];
             }else{
                 j--;
                 if(height[j]>rightMax) rightMax=height[j];
-                int sum =Math.min(leftMax,rightMax)-height[j];
-                if(sum>0) rain+=sum;
+                rain+=rightMax-height[j];
             }
         }
 
