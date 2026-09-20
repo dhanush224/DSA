@@ -16,24 +16,21 @@
 class Solution {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
 
-        return recursion(preorder,inorder,0,preorder.length-1,0,inorder.length-1);
+        Map<Integer,Integer> map = new HashMap<>();
+        for(int i=0;i<inorder.length;i++) map.put(inorder[i],i);
+        return recursion(preorder,inorder,0,preorder.length-1,0,inorder.length-1, map);
 
     }
 
-    public TreeNode recursion(int[] preorder, int[] inorder, int preStart, int preEnd, int inStart, int inEnd){
+    public TreeNode recursion(int[] preorder, int[] inorder, int preStart, int preEnd, int inStart, int inEnd, Map<Integer,Integer> map){
         if((preEnd<preStart) || (inEnd<inStart) || (preStart<0) || (preStart>=inorder.length)) return null;
 
     
         TreeNode root = new TreeNode(preorder[preStart]);
         int mid = Integer.MIN_VALUE;
-        for(int i=inStart;i<=inEnd;i++){
-            if(root.val==inorder[i]) {
-                mid = i;
-                break;
-            }
-        }
-        root.left = recursion(preorder,inorder,preStart+1,preorder.length-1,inStart,mid-1);
-        root.right = recursion(preorder,inorder,preStart+mid-inStart+1,preorder.length-1,mid+1,inEnd);
+        mid=map.get(root.val);
+        root.left = recursion(preorder,inorder,preStart+1,preorder.length-1,inStart,mid-1,map);
+        root.right = recursion(preorder,inorder,preStart+mid-inStart+1,preorder.length-1,mid+1,inEnd,map);
 
         return root;
     }
