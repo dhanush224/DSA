@@ -8,15 +8,15 @@ class Solution {
         int rain=0;
         while(i<j){
             if(height[i]<height[j]){
-                int sum =Math.min(leftMax,rightMax)-height[i];
-                if(sum>0) rain+=sum;
                 i++;
                 if(height[i]>leftMax) leftMax=height[i];
-            }else{
-                int sum =Math.min(leftMax,rightMax)-height[j];
+                int sum =Math.min(leftMax,rightMax)-height[i];
                 if(sum>0) rain+=sum;
+            }else{
                 j--;
                 if(height[j]>rightMax) rightMax=height[j];
+                int sum =Math.min(leftMax,rightMax)-height[j];
+                if(sum>0) rain+=sum;
             }
         }
 
