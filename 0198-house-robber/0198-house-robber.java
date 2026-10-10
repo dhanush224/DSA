@@ -1,17 +1,20 @@
 class Solution {
     public int rob(int[] nums) {
-        if(nums.length==1) return nums[0];
-        
-        int prev=nums[0];
-        int prev2= prev;
-        for(int i=1;i<nums.length;i++){
-            int l = nums[i];
-            if(i>1) l+=prev2;
-            int r = prev;
-            prev2=prev;
-            prev=Math.max(l,r);
+        int[] dp = new int[nums.length];
+        for(int i=0;i<nums.length;i++)dp[i]=-1;
+        return dfs(0,nums, dp);
+    }
+
+    public int dfs(int i, int[] nums, int[] dp){
+        if(i==nums.length-1) return dp[i]=nums[i];
+        else if(i>nums.length-1) return 0;
+
+        if(dp[i]==-1){
+            int rob =nums[i]+dfs(i+2,nums,dp);
+            int dontrob = dfs(i+1,nums,dp);
+            dp[i]=Math.max(rob,dontrob);
         }
 
-        return prev;
+        return dp[i];
     }
 }
